@@ -138,3 +138,4 @@ If the database is recreated, content and source cards are restored from `conten
 - The app is intentionally framework-light.
 - Content is stored as files so it can be revised incrementally.
 - Progress is stored as events and card state in SQLite, not as opaque aggregate JSON.
+- The repository is licensed under the MIT License. See `LICENSE`.
