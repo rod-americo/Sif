@@ -1,0 +1,194 @@
+[
+  {
+    "id": "ctm_ex_01",
+    "moduleId": "constitution-transformations",
+    "lessonId": "corps-purs-et-melanges",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "Lequel de ces exemples décrit un mélange hétérogène ?",
+    "choices": [
+      "L'air d'une salle",
+      "L'eau distillée",
+      "L'huile mélangée à l'eau",
+      "Une solution aqueuse de sel"
+    ],
+    "correctIndex": 2,
+    "explanation": "On distingue plusieurs phases dans un mélange eau-huile : c'est un mélange hétérogène."
+  },
+  {
+    "id": "ctm_ex_02",
+    "moduleId": "constitution-transformations",
+    "lessonId": "corps-purs-et-melanges",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "Le sulfate de cuivre anhydre devient bleu. Que met-on en évidence ?",
+    "choices": [
+      "La présence d'eau",
+      "La présence de dioxygène",
+      "La présence de dioxyde de carbone",
+      "La présence d'ions chlorure"
+    ],
+    "correctIndex": 0,
+    "explanation": "Le sulfate de cuivre anhydre bleuit en présence d'eau."
+  },
+  {
+    "id": "ctm_ex_03",
+    "moduleId": "constitution-transformations",
+    "lessonId": "solutions-aqueuses",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "Dans une solution de sucre dans l'eau, le solvant est :",
+    "choices": [
+      "Le sucre",
+      "L'eau",
+      "Le bécher",
+      "Le mélange entier"
+    ],
+    "correctIndex": 1,
+    "explanation": "Le solvant est l'espèce majoritaire qui dissout l'autre : ici, l'eau."
+  },
+  {
+    "id": "ctm_ex_04",
+    "moduleId": "constitution-transformations",
+    "lessonId": "solutions-aqueuses",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "On dissout 5 g de sel pour obtenir 0,50 L de solution. Quelle est la concentration en masse ?",
+    "choices": [
+      "2,5 g/L",
+      "5 g/L",
+      "10 g/L",
+      "25 g/L"
+    ],
+    "correctIndex": 2,
+    "explanation": "Cm = m / V = 5 / 0,50 = 10 g/L."
+  },
+  {
+    "id": "ctm_ex_05",
+    "moduleId": "constitution-transformations",
+    "lessonId": "macroscopique-microscopique",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "Que représente le numéro atomique Z ?",
+    "choices": [
+      "Le nombre de neutrons",
+      "Le nombre de protons",
+      "Le nombre d'électrons de valence",
+      "Le nombre total de nucléons"
+    ],
+    "correctIndex": 1,
+    "explanation": "Le numéro atomique Z est le nombre de protons dans le noyau."
+  },
+  {
+    "id": "ctm_ex_06",
+    "moduleId": "constitution-transformations",
+    "lessonId": "macroscopique-microscopique",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "Un atome a A = 23 et Z = 11. Son nombre de neutrons vaut :",
+    "choices": [
+      "11",
+      "12",
+      "23",
+      "34"
+    ],
+    "correctIndex": 1,
+    "explanation": "N = A - Z = 23 - 11 = 12."
+  },
+  {
+    "id": "ctm_ex_07",
+    "moduleId": "constitution-transformations",
+    "lessonId": "stabilite-elements",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "L'ion sodium Na+ possède :",
+    "choices": [
+      "11 électrons",
+      "12 électrons",
+      "10 électrons",
+      "9 électrons"
+    ],
+    "correctIndex": 2,
+    "explanation": "L'atome de sodium neutre a 11 électrons. Na+ en a perdu un, donc il en reste 10."
+  },
+  {
+    "id": "ctm_ex_08",
+    "moduleId": "constitution-transformations",
+    "lessonId": "mole",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "Une mole correspond à :",
+    "choices": [
+      "6,022 x 10^20 entités",
+      "6,022 x 10^23 entités",
+      "6,022 x 10^26 entités",
+      "1,000 x 10^23 entités"
+    ],
+    "correctIndex": 1,
+    "explanation": "Par définition, une mole contient 6,022 x 10^23 entités élémentaires."
+  },
+  {
+    "id": "ctm_ex_09",
+    "moduleId": "constitution-transformations",
+    "lessonId": "effets-thermiques",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "Le passage de l'état liquide à l'état gazeux s'appelle :",
+    "choices": [
+      "Solidification",
+      "Vaporisation",
+      "Fusion",
+      "Liquéfaction"
+    ],
+    "correctIndex": 1,
+    "explanation": "Le passage du liquide vers le gaz est une vaporisation."
+  },
+  {
+    "id": "ctm_ex_10",
+    "moduleId": "constitution-transformations",
+    "lessonId": "transformations-chimiques",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "Dans une transformation chimique, le réactif limitant est :",
+    "choices": [
+      "Celui qui reste toujours en excès",
+      "Celui qui disparaît en premier",
+      "Le produit principal",
+      "Le réactif qui a la plus grande masse"
+    ],
+    "correctIndex": 1,
+    "explanation": "Le réactif limitant est entièrement consommé en premier et arrête la transformation."
+  },
+  {
+    "id": "ctm_ex_11",
+    "moduleId": "constitution-transformations",
+    "lessonId": "synthese",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "La chromatographie sur couche mince permet notamment de :",
+    "choices": [
+      "Mesurer une température",
+      "Comparer des espèces chimiques",
+      "Peser une molécule",
+      "Compter les électrons"
+    ],
+    "correctIndex": 1,
+    "explanation": "La CCM permet de comparer des espèces chimiques à partir de leurs taches."
+  },
+  {
+    "id": "ctm_ex_12",
+    "moduleId": "constitution-transformations",
+    "lessonId": "transformations-nucleaires",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "Quelle affirmation est correcte ?",
+    "choices": [
+      "La fusion nucléaire correspond à un changement d'état",
+      "Une réaction nucléaire modifie le noyau",
+      "Une transformation chimique modifie le noyau",
+      "La fission et la fusion sont des transformations physiques"
+    ],
+    "correctIndex": 1,
+    "explanation": "Une réaction nucléaire modifie le noyau de l'atome."
+  }
+]

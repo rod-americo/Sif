@@ -1,0 +1,122 @@
+[
+  {
+    "id": "ctm_card_01",
+    "prompt": "Qu'est-ce qu'un corps pur ?",
+    "answer": "Un corps constitué d'une seule espèce chimique.",
+    "moduleIds": ["constitution-transformations"],
+    "lessonIds": ["corps-purs-et-melanges"],
+    "tags": ["definition", "macroscopique"]
+  },
+  {
+    "id": "ctm_card_02",
+    "prompt": "Quelle est la différence entre un mélange homogène et un mélange hétérogène ?",
+    "answer": "Un mélange homogène paraît uniforme à l'oeil nu, un mélange hétérogène présente plusieurs phases visibles.",
+    "moduleIds": ["constitution-transformations"],
+    "lessonIds": ["corps-purs-et-melanges"],
+    "tags": ["definition", "melanges"]
+  },
+  {
+    "id": "ctm_card_03",
+    "prompt": "Quel test met en évidence la présence d'eau ?",
+    "answer": "Le sulfate de cuivre anhydre, qui devient bleu en présence d'eau.",
+    "moduleIds": ["constitution-transformations"],
+    "lessonIds": ["corps-purs-et-melanges"],
+    "tags": ["tests-chimiques"]
+  },
+  {
+    "id": "ctm_card_04",
+    "prompt": "Dans une solution aqueuse, quel est le rôle du solvant ?",
+    "answer": "Le solvant est l'espèce majoritaire qui dissout le soluté ; dans une solution aqueuse, c'est l'eau.",
+    "moduleIds": ["constitution-transformations"],
+    "lessonIds": ["solutions-aqueuses"],
+    "tags": ["solutions"]
+  },
+  {
+    "id": "ctm_card_05",
+    "prompt": "Donne la formule de la concentration en masse.",
+    "answer": "Cm = m / V, avec la masse de soluté sur le volume de solution.",
+    "moduleIds": ["constitution-transformations"],
+    "lessonIds": ["solutions-aqueuses"],
+    "tags": ["formule", "solutions"]
+  },
+  {
+    "id": "ctm_card_06",
+    "prompt": "Que représente le numéro atomique Z ?",
+    "answer": "Le nombre de protons dans le noyau.",
+    "moduleIds": ["constitution-transformations"],
+    "lessonIds": ["macroscopique-microscopique"],
+    "tags": ["atome"]
+  },
+  {
+    "id": "ctm_card_07",
+    "prompt": "Comment calcule-t-on le nombre de neutrons ?",
+    "answer": "N = A - Z, où A est le nombre de masse et Z le numéro atomique.",
+    "moduleIds": ["constitution-transformations"],
+    "lessonIds": ["macroscopique-microscopique"],
+    "tags": ["atome", "calcul"]
+  },
+  {
+    "id": "ctm_card_08",
+    "prompt": "Pourquoi les gaz nobles sont-ils importants dans ce chapitre ?",
+    "answer": "Leur stabilité sert de repère pour comprendre la formation d'ions et de molécules stables.",
+    "moduleIds": ["constitution-transformations"],
+    "lessonIds": ["stabilite-elements"],
+    "tags": ["configuration-electronique"]
+  },
+  {
+    "id": "ctm_card_09",
+    "prompt": "Combien d'entités contient une mole ?",
+    "answer": "Une mole contient 6,022 x 10^23 entités élémentaires.",
+    "moduleIds": ["constitution-transformations"],
+    "lessonIds": ["mole"],
+    "tags": ["mole"]
+  },
+  {
+    "id": "ctm_card_10",
+    "prompt": "Quelle est la différence entre transformation physique et transformation chimique ?",
+    "answer": "Une transformation physique change l'état ou l'aspect sans changer l'espèce chimique ; une transformation chimique forme de nouvelles espèces.",
+    "moduleIds": ["constitution-transformations"],
+    "lessonIds": ["effets-thermiques", "transformations-chimiques"],
+    "tags": ["transformations"]
+  },
+  {
+    "id": "ctm_card_11",
+    "prompt": "Qu'est-ce qu'un réactif limitant ?",
+    "answer": "Le réactif entièrement consommé en premier, dont la disparition arrête la transformation chimique.",
+    "moduleIds": ["constitution-transformations"],
+    "lessonIds": ["transformations-chimiques"],
+    "tags": ["chimie", "stoechiometrie"]
+  },
+  {
+    "id": "ctm_card_12",
+    "prompt": "À quoi sert une chromatographie sur couche mince ?",
+    "answer": "À comparer ou identifier des espèces chimiques à partir de la migration de taches.",
+    "moduleIds": ["constitution-transformations"],
+    "lessonIds": ["synthese"],
+    "tags": ["ccm", "synthese"]
+  },
+  {
+    "id": "ctm_card_13",
+    "prompt": "Quelle différence fondamentale sépare une transformation nucléaire d'une transformation chimique ?",
+    "answer": "La transformation nucléaire modifie le noyau ; la transformation chimique modifie seulement les espèces formées à partir des électrons et liaisons.",
+    "moduleIds": ["constitution-transformations"],
+    "lessonIds": ["transformations-nucleaires"],
+    "tags": ["nucleaire"]
+  },
+  {
+    "id": "ctm_card_14",
+    "prompt": "Que signifie qu'un atome neutre est électriquement neutre ?",
+    "answer": "Il possède autant de protons que d'électrons.",
+    "moduleIds": ["constitution-transformations"],
+    "lessonIds": ["macroscopique-microscopique"],
+    "tags": ["atome", "charge"]
+  },
+  {
+    "id": "ctm_card_15",
+    "prompt": "Donne deux exemples de transformations physiques.",
+    "answer": "Par exemple la fusion de la glace et la vaporisation de l'eau.",
+    "moduleIds": ["constitution-transformations"],
+    "lessonIds": ["effets-thermiques"],
+    "tags": ["transformations-physiques"]
+  }
+]

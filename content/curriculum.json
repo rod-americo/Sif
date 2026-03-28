@@ -1,0 +1,34 @@
+{
+  "title": "Physique-Chimie 2nde",
+  "language": "fr",
+  "source": {
+    "program": "Programme officiel de physique-chimie de seconde générale et technologique",
+    "manual": "Belin Education / Humensis, 2019"
+  },
+  "modules": [
+    {
+      "id": "constitution-transformations",
+      "order": 1,
+      "title": "Constitution et transformations de la matière",
+      "shortTitle": "Matière",
+      "status": "active",
+      "summary": "Passer de l'échelle macroscopique à l'échelle microscopique, puis comprendre les transformations physiques, chimiques et nucléaires."
+    },
+    {
+      "id": "mouvement-interactions",
+      "order": 2,
+      "title": "Mouvement et interactions",
+      "shortTitle": "Mouvement",
+      "status": "planned",
+      "summary": "Décrire un mouvement, modéliser des actions mécaniques et exploiter le principe d'inertie."
+    },
+    {
+      "id": "ondes-signaux",
+      "order": 3,
+      "title": "Ondes et signaux",
+      "shortTitle": "Ondes",
+      "status": "planned",
+      "summary": "Étudier le son, la lumière, les images et les capteurs."
+    }
+  ]
+}

@@ -1,0 +1,475 @@
+:root {
+    --bg: #f4efe7;
+    --bg-soft: #efe4d2;
+    --panel: rgba(255, 250, 242, 0.88);
+    --panel-strong: #fffaf3;
+    --text: #1f2a2f;
+    --muted: #5d6a6f;
+    --line: rgba(31, 42, 47, 0.12);
+    --brand: #b86d2d;
+    --brand-2: #436b5c;
+    --brand-3: #d8b76b;
+    --danger: #b34d3c;
+    --success: #3f7c58;
+    --shadow: 0 24px 60px rgba(35, 27, 18, 0.12);
+    --radius-xl: 28px;
+    --radius-lg: 20px;
+    --radius-md: 14px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    color: var(--text);
+    font-family: "Avenir Next", "Segoe UI", sans-serif;
+    background:
+        radial-gradient(circle at top left, rgba(184, 109, 45, 0.18), transparent 25%),
+        radial-gradient(circle at 100% 0, rgba(67, 107, 92, 0.18), transparent 30%),
+        linear-gradient(180deg, var(--bg) 0%, var(--bg-soft) 100%);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+.page-shell {
+    width: min(1180px, calc(100% - 2rem));
+    margin: 0 auto;
+    padding: 1rem 0 3rem;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+.brand-row {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.crest {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--brand), var(--brand-3));
+    color: #fff7e8;
+    font-family: Georgia, "Iowan Old Style", serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow);
+}
+
+.eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.35rem 0.8rem;
+    border-radius: 999px;
+    background: rgba(67, 107, 92, 0.12);
+    color: var(--brand-2);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.76rem;
+    font-weight: 700;
+}
+
+.surface {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(12px);
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.45fr) minmax(290px, 0.95fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.hero-card,
+.module-card,
+.metric-card,
+.lesson-card,
+.exercise-card,
+.review-card,
+.empty-card {
+    border-radius: var(--radius-xl);
+}
+
+.hero-card {
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-card::after {
+    content: "";
+    position: absolute;
+    right: -80px;
+    bottom: -90px;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(216, 183, 107, 0.32), transparent 65%);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: Georgia, "Iowan Old Style", serif;
+    letter-spacing: -0.02em;
+    margin: 0;
+}
+
+h1 {
+    font-size: clamp(2.6rem, 5vw, 4.8rem);
+    line-height: 0.94;
+    max-width: 11ch;
+    margin: 1rem 0 0.9rem;
+}
+
+.hero-copy {
+    max-width: 62ch;
+    line-height: 1.7;
+    color: var(--muted);
+    font-size: 1.05rem;
+}
+
+.actions,
+.chip-row,
+.stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.stack {
+    flex-direction: column;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0.85rem 1.15rem;
+    border-radius: 999px;
+    border: 0;
+    font-weight: 700;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--brand), var(--brand-3));
+    color: #26170b;
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px solid var(--line);
+    color: var(--text);
+}
+
+.btn-danger {
+    background: var(--danger);
+    color: #fff;
+}
+
+.btn-success {
+    background: var(--success);
+    color: #fff;
+}
+
+.grid-metrics,
+.grid-modules,
+.grid-two {
+    display: grid;
+    gap: 1rem;
+}
+
+.grid-metrics {
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    margin: 1rem 0 2rem;
+}
+
+.grid-modules {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.grid-two {
+    grid-template-columns: minmax(0, 1.25fr) minmax(300px, 0.95fr);
+}
+
+.metric-card,
+.module-card,
+.lesson-card,
+.review-card,
+.empty-card,
+.exercise-card {
+    padding: 1.25rem;
+}
+
+.metric-label {
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.72rem;
+    font-weight: 700;
+    margin-bottom: 0.45rem;
+}
+
+.metric-value {
+    font-size: clamp(1.8rem, 3vw, 2.7rem);
+    line-height: 1;
+}
+
+.muted {
+    color: var(--muted);
+}
+
+.section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 1rem;
+    margin: 2rem 0 0.9rem;
+}
+
+.module-card h3,
+.lesson-card h3,
+.exercise-card h3,
+.review-card h3 {
+    margin-bottom: 0.55rem;
+}
+
+.status-pill,
+.tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.32rem 0.68rem;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+.status-pill.active {
+    background: rgba(67, 107, 92, 0.15);
+    color: var(--brand-2);
+}
+
+.status-pill.planned {
+    background: rgba(184, 109, 45, 0.12);
+    color: var(--brand);
+}
+
+.tag {
+    background: rgba(216, 183, 107, 0.22);
+    color: #6a4c11;
+}
+
+.list {
+    display: grid;
+    gap: 0.75rem;
+    margin: 0;
+    padding-left: 1rem;
+}
+
+.list-tight {
+    display: grid;
+    gap: 0.45rem;
+    margin: 0;
+    padding-left: 1rem;
+}
+
+.lesson-nav {
+    display: grid;
+    gap: 0.65rem;
+}
+
+.lesson-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.8rem;
+    padding: 0.85rem 0.95rem;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    background: rgba(255, 255, 255, 0.48);
+}
+
+.lesson-link.is-active {
+    border-color: rgba(184, 109, 45, 0.4);
+    background: rgba(255, 247, 235, 0.92);
+}
+
+.lesson-content {
+    line-height: 1.72;
+}
+
+.lesson-content h1,
+.lesson-content h2,
+.lesson-content h3 {
+    max-width: none;
+    margin-top: 1.15rem;
+    margin-bottom: 0.55rem;
+    font-size: 1.5rem;
+}
+
+.lesson-content p {
+    margin: 0 0 0.9rem;
+}
+
+.lesson-content ul {
+    margin: 0 0 1rem;
+    padding-left: 1.15rem;
+}
+
+.exercise-card {
+    display: grid;
+    gap: 1rem;
+}
+
+.choice-grid {
+    display: grid;
+    gap: 0.65rem;
+}
+
+.choice {
+    display: flex;
+    gap: 0.75rem;
+    padding: 0.8rem 0.9rem;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    background: rgba(255, 255, 255, 0.58);
+}
+
+.choice.correct {
+    border-color: rgba(63, 124, 88, 0.5);
+    background: rgba(63, 124, 88, 0.11);
+}
+
+.choice.wrong {
+    border-color: rgba(179, 77, 60, 0.45);
+    background: rgba(179, 77, 60, 0.1);
+}
+
+.feedback {
+    padding: 0.9rem 1rem;
+    border-radius: var(--radius-md);
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px dashed var(--line);
+}
+
+.review-stage {
+    width: min(760px, 100%);
+    margin: 1rem auto 0;
+}
+
+.flashcard {
+    min-height: 340px;
+    position: relative;
+    perspective: 1200px;
+}
+
+.flashcard-inner {
+    position: relative;
+    min-height: 340px;
+    transition: transform 0.6s ease;
+    transform-style: preserve-3d;
+}
+
+.flashcard.is-flipped .flashcard-inner {
+    transform: rotateY(180deg);
+}
+
+.flash-face {
+    position: absolute;
+    inset: 0;
+    padding: 1.6rem;
+    backface-visibility: hidden;
+    border-radius: var(--radius-xl);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flash-face.back {
+    transform: rotateY(180deg);
+}
+
+.flash-prompt,
+.flash-answer {
+    font-size: clamp(1.45rem, 2.4vw, 2.2rem);
+    line-height: 1.25;
+}
+
+.control-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.empty-card {
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .hero,
+    .grid-two {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .page-shell {
+        width: min(100% - 1rem, 100%);
+    }
+
+    .topbar {
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .hero-card,
+    .metric-card,
+    .module-card,
+    .lesson-card,
+    .exercise-card,
+    .review-card,
+    .empty-card {
+        padding: 1rem;
+    }
+}

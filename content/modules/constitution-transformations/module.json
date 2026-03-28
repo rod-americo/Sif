@@ -1,0 +1,27 @@
+{
+  "id": "constitution-transformations",
+  "title": "Constitution et transformations de la matière",
+  "theme": "Thème 1",
+  "order": 1,
+  "status": "active",
+  "summary": "Relier les observations du quotidien aux modèles microscopiques, puis comprendre les transformations physiques, chimiques et nucléaires.",
+  "whyItMatters": "Ce module pose le vocabulaire, les modèles et les repères quantitatifs qui servent ensuite dans toute la physique-chimie de seconde.",
+  "objectives": [
+    "Identifier des corps purs, des mélanges et des solutions aqueuses.",
+    "Passer du monde macroscopique aux entités chimiques.",
+    "Exploiter les notions de quantité de matière, d'énergie et de transformation.",
+    "Différencier transformation physique, chimique et nucléaire."
+  ],
+  "chapters": [
+    { "id": "corps-purs-et-melanges", "title": "Corps purs et mélanges au quotidien", "lessonFile": "01-corps-purs-et-melanges.md" },
+    { "id": "solutions-aqueuses", "title": "Solutions aqueuses et concentration", "lessonFile": "02-solutions-aqueuses.md" },
+    { "id": "analyse-dune-solution", "title": "Analyse d'une solution", "lessonFile": "03-analyse-dune-solution.md" },
+    { "id": "macroscopique-microscopique", "title": "Du macroscopique au microscopique", "lessonFile": "04-du-macroscopique-au-microscopique.md" },
+    { "id": "stabilite-elements", "title": "Stabilité des éléments chimiques", "lessonFile": "05-stabilite-des-elements.md" },
+    { "id": "mole", "title": "La mole, unité de la quantité de matière", "lessonFile": "06-mole.md" },
+    { "id": "effets-thermiques", "title": "Effets thermiques des transformations physiques", "lessonFile": "07-effets-thermiques.md" },
+    { "id": "transformations-chimiques", "title": "Transformations chimiques", "lessonFile": "08-transformations-chimiques.md" },
+    { "id": "synthese", "title": "Synthèse d'une espèce chimique", "lessonFile": "09-synthese.md" },
+    { "id": "transformations-nucleaires", "title": "Transformations nucléaires", "lessonFile": "10-transformations-nucleaires.md" }
+  ]
+}
