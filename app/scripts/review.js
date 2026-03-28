@@ -96,14 +96,18 @@ function renderCard(card) {
                         <div class="chip-row">
                             ${card.moduleIds.map((moduleId) => `<span class="tag">${moduleId}</span>`).join('')}
                         </div>
-                        <div class="flash-prompt">${card.prompt}</div>
+                        <div class="flash-copy">
+                            <div class="flash-prompt">${card.prompt}</div>
+                        </div>
                         <div class="muted">Tapote la carte pour voir la réponse.</div>
                     </div>
                     <div class="flash-face back surface">
                         <div class="chip-row">
                             ${card.tags.map((tag) => `<span class="tag">${tag}</span>`).join('')}
                         </div>
-                        <div class="flash-answer">${card.answer}</div>
+                        <div class="flash-copy">
+                            <div class="flash-answer">${card.answer}</div>
+                        </div>
                         <div class="muted">Choisis un niveau de rappel.</div>
                     </div>
                 </div>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Science icon</title>
+  <desc id="desc">Icon inspired by physics-chemistry, with a flask, orbit lines and a signal wave.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ebf5f1"/>
+      <stop offset="100%" stop-color="#d8ece5"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#143d3d"/>
+      <stop offset="100%" stop-color="#0c2628"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="20%" y1="10%" x2="80%" y2="90%">
+      <stop offset="0%" stop-color="#5eb9a4"/>
+      <stop offset="100%" stop-color="#1f7568"/>
+    </linearGradient>
+    <linearGradient id="amber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f1bf65"/>
+      <stop offset="100%" stop-color="#cf8b1d"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="24" stdDeviation="30" flood-color="#17453c" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" rx="260" fill="url(#bg)"/>
+  <rect x="54" y="54" width="916" height="916" rx="224" fill="#f8fcfa" stroke="#d5e5df" stroke-width="12"/>
+
+  <g filter="url(#shadow)">
+    <circle cx="512" cy="512" r="316" fill="#f6fbf8"/>
+  </g>
+
+  <g fill="none" stroke="url(#accent)" stroke-width="34" opacity="0.92">
+    <ellipse cx="512" cy="426" rx="232" ry="108"/>
+    <ellipse cx="512" cy="426" rx="232" ry="108" transform="rotate(58 512 426)"/>
+    <ellipse cx="512" cy="426" rx="232" ry="108" transform="rotate(-58 512 426)"/>
+  </g>
+
+  <g fill="#1f7568">
+    <circle cx="312" cy="430" r="26"/>
+    <circle cx="625" cy="270" r="26"/>
+    <circle cx="700" cy="513" r="26"/>
+  </g>
+
+  <g transform="translate(322 404)">
+    <path d="M106 0v112l-139 220c-25 39 3 88 49 88h336c46 0 74-49 49-88L262 112V0" fill="#eff7f3" stroke="url(#ink)" stroke-width="28" stroke-linejoin="round"/>
+    <path d="M32 378h304c17 0 28-18 19-33L266 204H98L13 345c-9 15 2 33 19 33Z" fill="url(#amber)"/>
+    <path d="M77 255c35 20 64 11 91-3s52-20 84 0 59 22 97-1" fill="none" stroke="#fff5dc" stroke-width="20" stroke-linecap="round"/>
+    <path d="M119 0h130" stroke="url(#ink)" stroke-width="28" stroke-linecap="round"/>
+  </g>
+
+  <path d="M220 784c48-16 78-63 118-63 34 0 54 40 87 40 37 0 57-51 101-51 36 0 56 34 89 34 47 0 77-49 109-69" fill="none" stroke="url(#ink)" stroke-width="28" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,23 @@
+{
+  "name": "Sif",
+  "short_name": "Sif",
+  "description": "Application personnelle de physique-chimie pour une élève de 2nde.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f0de",
+  "theme_color": "#d59a38",
+  "icons": [
+    {
+      "src": "assets/icons/generated/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/generated/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
