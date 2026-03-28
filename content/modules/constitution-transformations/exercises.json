@@ -190,5 +190,933 @@
     ],
     "correctIndex": 1,
     "explanation": "Une réaction nucléaire modifie le noyau de l'atome."
+  },
+  {
+    "id": "ctm_legacy_1_1",
+    "moduleId": "constitution-transformations",
+    "lessonId": "transformations-chimiques",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "Lequel de ces exemples illustre une transformation chimique ?",
+    "choices": [
+      "L'évaporation de l'eau d'un lac.",
+      "La combustion d'une allumette.",
+      "La dissolution du sucre dans le café.",
+      "La formation de glace dans un congélateur."
+    ],
+    "correctIndex": 1,
+    "explanation": "Lors d'une combustion, le bois et le dioxygène (réactifs) disparaissent pour former de nouvelles espèces (CO2, H2O). C'est une transformation chimique."
+  },
+  {
+    "id": "ctm_legacy_1_2",
+    "moduleId": "constitution-transformations",
+    "lessonId": "macroscopique-microscopique",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "Que représente le numéro atomique Z d'un atome ?",
+    "choices": [
+      "Le nombre de neutrons dans le noyau.",
+      "Le nombre total de nucléons (protons + neutrons).",
+      "Le nombre de protons dans le noyau.",
+      "La masse totale de l'atome."
+    ],
+    "correctIndex": 2,
+    "explanation": "Par définition, Z est le numéro atomique, soit le nombre de protons. Il caractérise l'élément chimique."
+  },
+  {
+    "id": "ctm_legacy_1_3",
+    "moduleId": "constitution-transformations",
+    "lessonId": "macroscopique-microscopique",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "Si un atome est électriquement neutre, cela signifie que :",
+    "choices": [
+      "Il ne possède pas d'électrons.",
+      "Il possède autant de protons que de neutrons.",
+      "Il possède autant de protons que d'électrons.",
+      "Il ne possède pas de charge dans son noyau."
+    ],
+    "correctIndex": 2,
+    "explanation": "Les protons ont une charge positive (+e) et les électrons une charge négative (-e). Pour être neutre, un atome doit avoir le même nombre de chaque."
+  },
+  {
+    "id": "ctm_legacy_1_4",
+    "moduleId": "constitution-transformations",
+    "lessonId": "corps-purs-et-melanges",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "Un mélange où l'on ne peut pas distinguer les différents constituants à l'œil nu s'appelle :",
+    "choices": [
+      "Un corps pur.",
+      "Un mélange hétérogène.",
+      "Une émulsion.",
+      "Un mélange homogène."
+    ],
+    "correctIndex": 3,
+    "explanation": "C'est la définition d'un mélange homogène (ex: eau salée, sirop dilué)."
+  },
+  {
+    "id": "ctm_legacy_1_5",
+    "moduleId": "constitution-transformations",
+    "lessonId": "effets-thermiques",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "L'équation `H2O(s) → H2O(l)` décrit :",
+    "choices": [
+      "Une transformation chimique.",
+      "La fusion de l'eau (transformation physique).",
+      "La sublimation de l'eau.",
+      "Une transformation nucléaire."
+    ],
+    "correctIndex": 1,
+    "explanation": "C'est le passage de l'état solide (s) à l'état liquide (l), appelé fusion. La molécule H2O reste la même."
+  },
+  {
+    "id": "ctm_legacy_1_6",
+    "moduleId": "constitution-transformations",
+    "lessonId": "solutions-aqueuses",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "Dans une solution d'eau salée, quel constituant joue le rôle de solvant ?",
+    "choices": [
+      "Le sel, car il disparaît visuellement.",
+      "L'eau, car elle est majoritaire.",
+      "Le mélange entier, car tout est uniforme.",
+      "Le récipient, car il contient la solution."
+    ],
+    "correctIndex": 1,
+    "explanation": "Le solvant est l'espèce majoritaire qui dissout l'autre. Dans une solution aqueuse de sel, l'eau est le solvant."
+  },
+  {
+    "id": "ctm_legacy_1_7",
+    "moduleId": "constitution-transformations",
+    "lessonId": "solutions-aqueuses",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "Un corps de masse volumique 0,80 g/mL plongé dans l'eau va :",
+    "choices": [
+      "Couler, car sa masse volumique est positive.",
+      "Rester au fond car 0,80 est proche de 1.",
+      "Flotter, car sa masse volumique est inférieure à celle de l'eau.",
+      "Se dissoudre automatiquement."
+    ],
+    "correctIndex": 2,
+    "explanation": "L'eau a une masse volumique d'environ 1,0 g/mL. Si un corps a une masse volumique plus faible, il flotte."
+  },
+  {
+    "id": "ctm_legacy_1_9",
+    "moduleId": "constitution-transformations",
+    "lessonId": "macroscopique-microscopique",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "Un atome de numéro atomique Z = 9 possède :",
+    "choices": [
+      "9 protons dans son noyau.",
+      "9 neutrons dans son noyau.",
+      "9 nucléons en tout.",
+      "Toujours 9 neutrons et 9 électrons."
+    ],
+    "correctIndex": 0,
+    "explanation": "Le numéro atomique Z correspond au nombre de protons. Le nombre de neutrons dépend de l'isotope."
+  },
+  {
+    "id": "ctm_legacy_1_10",
+    "moduleId": "constitution-transformations",
+    "lessonId": "corps-purs-et-melanges",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "Parmi les situations suivantes, laquelle décrit un mélange hétérogène ?",
+    "choices": [
+      "Du sirop parfaitement dilué dans l'eau.",
+      "De l'air dans une salle de classe.",
+      "De l'huile mélangée à de l'eau.",
+      "Du vinaigre blanc."
+    ],
+    "correctIndex": 2,
+    "explanation": "Dans le mélange eau/huile, on distingue plusieurs phases à l'œil nu : le mélange est hétérogène."
+  },
+  {
+    "id": "ctm_legacy_1_11",
+    "moduleId": "constitution-transformations",
+    "lessonId": "corps-purs-et-melanges",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "Quelle grandeur permet de relier la masse et le volume d'un échantillon ?",
+    "choices": [
+      "Le numéro atomique.",
+      "La masse volumique.",
+      "La mole.",
+      "La charge électrique."
+    ],
+    "correctIndex": 1,
+    "explanation": "La masse volumique relie la masse et le volume par la relation ρ = m / V."
+  },
+  {
+    "id": "ctm_legacy_1_12",
+    "moduleId": "constitution-transformations",
+    "lessonId": "corps-purs-et-melanges",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "Quand un solide non dissous est séparé d'un liquide à l'aide d'un papier filtre, on réalise :",
+    "choices": [
+      "Une fusion.",
+      "Une distillation.",
+      "Une filtration.",
+      "Une dilution."
+    ],
+    "correctIndex": 2,
+    "explanation": "La filtration permet de retenir un solide non dissous et de récupérer le liquide filtré."
+  },
+  {
+    "id": "ctm_legacy_1_13",
+    "moduleId": "constitution-transformations",
+    "lessonId": "corps-purs-et-melanges",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "Le dioxyde de carbone est mis en évidence par :",
+    "choices": [
+      "L'eau de chaux qui se trouble.",
+      "Le sulfate de cuivre qui bleuit.",
+      "Une bûchette qui se rallume.",
+      "Une filtration."
+    ],
+    "correctIndex": 0,
+    "explanation": "Le dioxyde de carbone trouble l'eau de chaux : c'est son test caractéristique."
+  },
+  {
+    "id": "ctm_legacy_1_15",
+    "moduleId": "constitution-transformations",
+    "lessonId": "macroscopique-microscopique",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "Si un atome a A = 23 et Z = 11, son nombre de neutrons est :",
+    "choices": [
+      "11",
+      "12",
+      "23",
+      "34"
+    ],
+    "correctIndex": 1,
+    "explanation": "Le nombre de neutrons vaut N = A - Z = 23 - 11 = 12."
+  },
+  {
+    "id": "ctm_legacy_1_16",
+    "moduleId": "constitution-transformations",
+    "lessonId": "corps-purs-et-melanges",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "La densité d'un liquide vaut 1,2. On peut en déduire que ce liquide :",
+    "choices": [
+      "Est moins dense que l'eau.",
+      "A une masse volumique nulle.",
+      "Est plus dense que l'eau.",
+      "Est nécessairement un solide."
+    ],
+    "correctIndex": 2,
+    "explanation": "Une densité supérieure à 1 signifie une masse volumique plus grande que celle de l'eau."
+  },
+  {
+    "id": "ctm_legacy_1_17",
+    "moduleId": "constitution-transformations",
+    "lessonId": "corps-purs-et-melanges",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "Quel énoncé décrit le mieux un corps pur ?",
+    "choices": [
+      "Il contient plusieurs espèces chimiques invisibles.",
+      "Il est formé d'une seule espèce chimique.",
+      "Il est toujours liquide à température ambiante.",
+      "Il ne change jamais d'état."
+    ],
+    "correctIndex": 1,
+    "explanation": "Un corps pur est constitué d'une seule espèce chimique, quelle que soit sa forme ou son état."
+  },
+  {
+    "id": "ctm_legacy_1_18",
+    "moduleId": "constitution-transformations",
+    "lessonId": "corps-purs-et-melanges",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "Dans une boisson gazeuse fermée, le dioxyde de carbone dissous dans le liquide forme avec lui :",
+    "choices": [
+      "Un mélange homogène.",
+      "Un mélange hétérogène.",
+      "Un corps pur.",
+      "Un noyau atomique."
+    ],
+    "correctIndex": 0,
+    "explanation": "Tant que le gaz est dissous uniformément dans le liquide, le mélange est homogène."
+  },
+  {
+    "id": "ctm_legacy_1_19",
+    "moduleId": "constitution-transformations",
+    "lessonId": "macroscopique-microscopique",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "Un atome neutre se caractérise par :",
+    "choices": [
+      "Autant de protons que d'électrons.",
+      "Autant de neutrons que d'électrons.",
+      "Une absence totale de charge dans le noyau.",
+      "Toujours 8 électrons."
+    ],
+    "correctIndex": 0,
+    "explanation": "La neutralité électrique impose que la charge positive totale des protons compense la charge négative des électrons."
+  },
+  {
+    "id": "ctm_legacy_1_20",
+    "moduleId": "constitution-transformations",
+    "lessonId": "effets-thermiques",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "Quel changement correspond à une transformation physique ?",
+    "choices": [
+      "Le fer qui rouille.",
+      "Le bois qui brûle.",
+      "L'eau liquide qui gèle.",
+      "Une pile qui se décharge."
+    ],
+    "correctIndex": 2,
+    "explanation": "Quand l'eau gèle, seules l'organisation et l'agitation des molécules changent : c'est une transformation physique."
+  },
+  {
+    "id": "ctm_legacy_2_1",
+    "moduleId": "constitution-transformations",
+    "lessonId": "stabilite-elements",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "La configuration électronique d'un atome d'Oxygène (Z=8) est :",
+    "choices": [
+      "1s² 2s² 2p⁴",
+      "1s² 2s² 2p⁶",
+      "1s² 2s² 3s² 3p²",
+      "1s² 2p⁶"
+    ],
+    "correctIndex": 0,
+    "explanation": "L'oxygène a 8 électrons (car Z=8 et c'est un atome neutre). Ils se répartissent : 2 sur la couche 1s, 2 sur la 2s, et les 4 restants sur la 2p."
+  },
+  {
+    "id": "ctm_legacy_2_2",
+    "moduleId": "constitution-transformations",
+    "lessonId": "transformations-chimiques",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "Soit l'équation non équilibrée : _ N2 + _ H2 → _ NH3. Quels sont les coefficients stœchiométriques corrects ?",
+    "choices": [
+      "1, 2, 3",
+      "2, 3, 2",
+      "1, 3, 2",
+      "1, 4, 3"
+    ],
+    "correctIndex": 2,
+    "explanation": "1 N2 (donc 2 atomes d'azote) + 3 H2 (donc 6 atomes d'hydrogène) donne 2 NH3 (2 atomes d'azote et 6 d'hydrogène). La loi de Lavoisier est respectée."
+  },
+  {
+    "id": "ctm_legacy_2_3",
+    "moduleId": "constitution-transformations",
+    "lessonId": "macroscopique-microscopique",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "Qu'est-ce que des isotopes ?",
+    "choices": [
+      "Des atomes du même élément ayant le même nombre de nucléons.",
+      "Des atomes du même élément ayant un nombre différent de neutrons.",
+      "Des atomes d'éléments différents ayant le même nombre de protons.",
+      "Des ions ayant perdu un nombre différent d'électrons."
+    ],
+    "correctIndex": 1,
+    "explanation": "Les isotopes ont le même Z (donc même élément, même nombre de protons) mais un A différent, donc un nombre différent de neutrons."
+  },
+  {
+    "id": "ctm_legacy_2_4",
+    "moduleId": "constitution-transformations",
+    "lessonId": "solutions-aqueuses",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "Si on dissout 10g de sucre dans 200g d'eau pure, la masse de la solution sucrée sera :",
+    "choices": [
+      "Exactement 210g",
+      "Légèrement inférieure à 210g",
+      "Légèrement supérieure à 210g",
+      "Impossible à déterminer sans le volume"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lors d'une dissolution (transformation physique), il y a conservation totale de la masse. 10g + 200g = 210g."
+  },
+  {
+    "id": "ctm_legacy_2_5",
+    "moduleId": "constitution-transformations",
+    "lessonId": "macroscopique-microscopique",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "Le noyau de l'atome de fluor est symbolisé par  ¹⁹₉F. Combien compte-t-il de neutrons ?",
+    "choices": [
+      "19",
+      "9",
+      "10",
+      "28"
+    ],
+    "correctIndex": 2,
+    "explanation": "Le nombre de neutrons est A - Z. Ici, 19 (nucléons) - 9 (protons) = 10 neutrons."
+  },
+  {
+    "id": "ctm_legacy_2_6",
+    "moduleId": "constitution-transformations",
+    "lessonId": "solutions-aqueuses",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "Une solution contient 12 g de soluté dissous dans un volume final de 0,75 L. Sa concentration en masse vaut :",
+    "choices": [
+      "9 g/L",
+      "16 g/L",
+      "12,75 g/L",
+      "0,0625 g/L"
+    ],
+    "correctIndex": 1,
+    "explanation": "Cm = m / V = 12 / 0,75 = 16 g/L."
+  },
+  {
+    "id": "ctm_legacy_2_7",
+    "moduleId": "constitution-transformations",
+    "lessonId": "stabilite-elements",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "Parmi les écritures suivantes, laquelle correspond à un ion chlorure ?",
+    "choices": [
+      "Cl⁺",
+      "Cl²⁻",
+      "Cl⁻",
+      "Cl"
+    ],
+    "correctIndex": 2,
+    "explanation": "L'atome de chlore gagne généralement un électron pour compléter son octet et devient l'ion chlorure Cl⁻."
+  },
+  {
+    "id": "ctm_legacy_2_8",
+    "moduleId": "constitution-transformations",
+    "lessonId": "stabilite-elements",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "Quelle phrase décrit correctement des éléments situés dans une même colonne du tableau périodique ?",
+    "choices": [
+      "Ils ont la même masse molaire.",
+      "Ils ont le même nombre d'électrons de valence.",
+      "Ils ont toujours le même nombre de neutrons.",
+      "Ils possèdent tous exactement trois couches électroniques."
+    ],
+    "correctIndex": 1,
+    "explanation": "Les éléments d'une même colonne ont des propriétés chimiques voisines car ils possèdent le même nombre d'électrons de valence."
+  },
+  {
+    "id": "ctm_legacy_2_9",
+    "moduleId": "constitution-transformations",
+    "lessonId": "transformations-chimiques",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "Pour équilibrer correctement une équation chimique, on a le droit de modifier :",
+    "choices": [
+      "Les indices dans les formules chimiques.",
+      "Les symboles des éléments.",
+      "Les coefficients placés devant les formules.",
+      "Les charges des ions pour simplifier."
+    ],
+    "correctIndex": 2,
+    "explanation": "On équilibre une équation en ajustant uniquement les coefficients stœchiométriques devant les formules, jamais les indices."
+  },
+  {
+    "id": "ctm_legacy_2_10",
+    "moduleId": "constitution-transformations",
+    "lessonId": "macroscopique-microscopique",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "Un atome neutre de magnésium a Z = 12. Combien possède-t-il d'électrons ?",
+    "choices": [
+      "10",
+      "12",
+      "24",
+      "6"
+    ],
+    "correctIndex": 1,
+    "explanation": "Un atome neutre possède autant d'électrons que de protons. Avec Z = 12, il a donc 12 électrons."
+  },
+  {
+    "id": "ctm_legacy_2_11",
+    "moduleId": "constitution-transformations",
+    "lessonId": "stabilite-elements",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "Pour l'atome de sodium Na (Z = 11), la couche externe contient :",
+    "choices": [
+      "1 électron.",
+      "2 électrons.",
+      "8 électrons.",
+      "11 électrons."
+    ],
+    "correctIndex": 0,
+    "explanation": "La configuration du sodium est 1s² 2s² 2p⁶ 3s¹ : il possède donc 1 électron de valence."
+  },
+  {
+    "id": "ctm_legacy_2_12",
+    "moduleId": "constitution-transformations",
+    "lessonId": "solutions-aqueuses",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "Quelle méthode est la plus adaptée pour récupérer de l'eau pure à partir d'une eau salée ?",
+    "choices": [
+      "La filtration seule.",
+      "La décantation seule.",
+      "La distillation.",
+      "La chromatographie."
+    ],
+    "correctIndex": 2,
+    "explanation": "Le sel est dissous dans l'eau. Pour récupérer de l'eau pure, il faut vaporiser puis condenser : c'est la distillation."
+  },
+  {
+    "id": "ctm_legacy_2_13",
+    "moduleId": "constitution-transformations",
+    "lessonId": "macroscopique-microscopique",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "L'écriture correcte du noyau d'aluminium de nombre de masse 27 et numéro atomique 13 est :",
+    "choices": [
+      "²⁷₁₃Al",
+      "¹³₂⁷Al",
+      "²⁷₁₄Al",
+      "²⁶₁₃Al"
+    ],
+    "correctIndex": 0,
+    "explanation": "Par convention, A est écrit en haut à gauche et Z en bas à gauche du symbole : ²⁷₁₃Al."
+  },
+  {
+    "id": "ctm_legacy_2_14",
+    "moduleId": "constitution-transformations",
+    "lessonId": "transformations-chimiques",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "Dans l'équation équilibrée 2 H2 + O2 → 2 H2O, le coefficient 2 devant H2O signifie que :",
+    "choices": [
+      "Chaque molécule d'eau contient 2 atomes.",
+      "Deux molécules ou deux moles d'eau sont formées dans la proportion indiquée.",
+      "L'eau possède une charge 2+.",
+      "La réaction dure deux fois plus longtemps."
+    ],
+    "correctIndex": 1,
+    "explanation": "Un coefficient stœchiométrique indique une proportion entre entités ou entre quantités de matière."
+  },
+  {
+    "id": "ctm_legacy_2_15",
+    "moduleId": "constitution-transformations",
+    "lessonId": "macroscopique-microscopique",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "Quel énoncé est correct à propos des isotopes du carbone ?",
+    "choices": [
+      "Ils ont des nombres de protons différents.",
+      "Ils ont des nombres de neutrons différents.",
+      "Ils appartiennent à des éléments différents.",
+      "Ils ont des charges électriques différentes dans le noyau."
+    ],
+    "correctIndex": 1,
+    "explanation": "Des isotopes ont le même numéro atomique Z, mais des nombres de neutrons différents."
+  },
+  {
+    "id": "ctm_legacy_2_16",
+    "moduleId": "constitution-transformations",
+    "lessonId": "solutions-aqueuses",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "Si l'on dissout davantage de soluté dans le même volume final de solution, la concentration en masse :",
+    "choices": [
+      "Diminue toujours.",
+      "Reste identique.",
+      "Augmente.",
+      "Devient nulle."
+    ],
+    "correctIndex": 2,
+    "explanation": "Puisque Cm = m / V, si la masse de soluté augmente à volume final constant, la concentration augmente."
+  },
+  {
+    "id": "ctm_legacy_2_17",
+    "moduleId": "constitution-transformations",
+    "lessonId": "macroscopique-microscopique",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "Quel ensemble de valeurs convient pour un atome neutre de chlore de numéro atomique 17 ?",
+    "choices": [
+      "17 protons et 17 électrons.",
+      "17 protons et 18 électrons.",
+      "18 protons et 17 électrons.",
+      "17 neutrons et 17 électrons."
+    ],
+    "correctIndex": 0,
+    "explanation": "Un atome neutre possède autant d'électrons que de protons, donc ici 17 et 17."
+  },
+  {
+    "id": "ctm_legacy_2_18",
+    "moduleId": "constitution-transformations",
+    "lessonId": "transformations-chimiques",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "Quel type de transformation correspond à la formation de rouille sur du fer ?",
+    "choices": [
+      "Transformation physique.",
+      "Transformation chimique.",
+      "Transformation nucléaire.",
+      "Simple changement d'état."
+    ],
+    "correctIndex": 1,
+    "explanation": "La rouille correspond à la formation de nouvelles espèces chimiques à partir du fer et du dioxygène."
+  },
+  {
+    "id": "ctm_legacy_2_19",
+    "moduleId": "constitution-transformations",
+    "lessonId": "macroscopique-microscopique",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "Le gaz dioxygène O2 est constitué :",
+    "choices": [
+      "D'un seul atome d'oxygène.",
+      "De deux ions oxyde.",
+      "De deux atomes d'oxygène liés dans une molécule.",
+      "De deux noyaux sans électrons."
+    ],
+    "correctIndex": 2,
+    "explanation": "O2 désigne une molécule de dioxygène formée de deux atomes d'oxygène liés."
+  },
+  {
+    "id": "ctm_legacy_2_20",
+    "moduleId": "constitution-transformations",
+    "lessonId": "synthese",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "Une espèce chimique migrante qui atteint la même hauteur qu'une référence en CCM est :",
+    "choices": [
+      "Forcément un mélange.",
+      "Probablement la même espèce chimique que la référence.",
+      "Toujours un gaz.",
+      "Toujours un ion."
+    ],
+    "correctIndex": 1,
+    "explanation": "En chromatographie, une même hauteur de migration dans les mêmes conditions suggère qu'il s'agit de la même espèce chimique."
+  },
+  {
+    "id": "ctm_legacy_3_1",
+    "moduleId": "constitution-transformations",
+    "lessonId": "mole",
+    "type": "mcq",
+    "difficulty": "advanced",
+    "prompt": "La constante d'Avogadro (NA) vaut environ 6,02 × 10²³ mol⁻¹. Elle représente :",
+    "choices": [
+      "La masse d'une mole d'atomes de carbone.",
+      "Le nombre d'entités (atomes, ions, molécules) contenues dans une mole.",
+      "Le volume occupé par un gaz à température ambiante.",
+      "Le nombre d'électrons dans un kilogramme de matière."
+    ],
+    "correctIndex": 1,
+    "explanation": "Une mole est simplement un 'paquet', et la constante d'Avogadro indique combien d'entités se trouvent dans ce paquet (6,02 × 10²³)."
+  },
+  {
+    "id": "ctm_legacy_3_2",
+    "moduleId": "constitution-transformations",
+    "lessonId": "transformations-chimiques",
+    "type": "mcq",
+    "difficulty": "advanced",
+    "prompt": "Dans une réaction chimique totale, le réactif limitant est :",
+    "choices": [
+      "Le réactif qui a la plus petite masse au départ.",
+      "Le réactif qui est consommé entièrement en premier et arrête la réaction.",
+      "Le réactif dont le coefficient stœchiométrique est le plus petit.",
+      "Le réactif qui a la plus grande masse molaire."
+    ],
+    "correctIndex": 1,
+    "explanation": "C'est la définition du réactif limitant : sa disparition totale stoppe la possibilité de former de nouveaux produits."
+  },
+  {
+    "id": "ctm_legacy_3_3",
+    "moduleId": "constitution-transformations",
+    "lessonId": "transformations-chimiques",
+    "type": "mcq",
+    "difficulty": "advanced",
+    "prompt": "On fait réagir 2 moles de dihydrogène (H2) avec 3 moles de dioxygène (O2) selon : 2 H2 + O2 → 2 H2O. Quel est le réactif limitant ?",
+    "choices": [
+      "H2",
+      "O2",
+      "H2O",
+      "Le mélange est stœchiométrique (aucun n'est limitant)."
+    ],
+    "correctIndex": 0,
+    "explanation": "Pour consommer 2 moles de H2, il faut 1 mole de O2. On a 3 moles de O2 (en excès). H2 sera totalement consommé en premier, c'est le réactif limitant."
+  },
+  {
+    "id": "ctm_legacy_3_4",
+    "moduleId": "constitution-transformations",
+    "lessonId": "transformations-nucleaires",
+    "type": "mcq",
+    "difficulty": "advanced",
+    "prompt": "Parmi ces équations, laquelle correspond à une transformation nucléaire (fission) ?",
+    "choices": [
+      "CH4 + 2 O2 → CO2 + 2 H2O",
+      "²/₁H + ³/₁H → ⁴/₂He + ¹/₀n",
+      "²³⁵/₉₂U + ¹/₀n → ¹⁴⁰/₅₄Xe + ⁹⁴/₃₈Sr + 2 ¹/₀n",
+      "H₂O(s) → H₂O(g)"
+    ],
+    "correctIndex": 2,
+    "explanation": "La réponse 3 montre l'uranium 235 qui, percuté par un neutron, se scinde en deux noyaux plus légers. C'est une fission nucléaire. (La réponse 2 est une fusion)."
+  },
+  {
+    "id": "ctm_legacy_3_5",
+    "moduleId": "constitution-transformations",
+    "lessonId": "mole",
+    "type": "mcq",
+    "difficulty": "advanced",
+    "prompt": "La masse molaire moléculaire du glucose (C6H12O6) est (Données: M(C)=12, M(H)=1, M(O)=16 g/mol) :",
+    "choices": [
+      "29 g/mol",
+      "180 g/mol",
+      "150 g/mol",
+      "342 g/mol"
+    ],
+    "correctIndex": 1,
+    "explanation": "M = (6 × 12) + (12 × 1) + (6 × 16) = 72 + 12 + 96 = 180 g/mol."
+  },
+  {
+    "id": "ctm_legacy_3_6",
+    "moduleId": "constitution-transformations",
+    "lessonId": "mole",
+    "type": "mcq",
+    "difficulty": "advanced",
+    "prompt": "Combien de moles représentent 36 g d'eau, sachant que M(H2O) = 18 g/mol ?",
+    "choices": [
+      "0,5 mol",
+      "1 mol",
+      "2 mol",
+      "18 mol"
+    ],
+    "correctIndex": 2,
+    "explanation": "n = m / M = 36 / 18 = 2 mol."
+  },
+  {
+    "id": "ctm_legacy_3_7",
+    "moduleId": "constitution-transformations",
+    "lessonId": "transformations-chimiques",
+    "type": "mcq",
+    "difficulty": "advanced",
+    "prompt": "Dans l'équation 2 Al + 3 Cl2 → 2 AlCl3, si l'on dispose de 4 mol d'Al et 3 mol de Cl2, le réactif limitant est :",
+    "choices": [
+      "Al",
+      "Cl2",
+      "AlCl3",
+      "Aucun, le mélange est stœchiométrique"
+    ],
+    "correctIndex": 1,
+    "explanation": "On compare 4/2 = 2 pour Al et 3/3 = 1 pour Cl2. Le plus petit rapport est celui du dichlore : il est limitant."
+  },
+  {
+    "id": "ctm_legacy_3_8",
+    "moduleId": "constitution-transformations",
+    "lessonId": "transformations-chimiques",
+    "type": "mcq",
+    "difficulty": "advanced",
+    "prompt": "Quelle affirmation est correcte à propos d'une transformation chimique ?",
+    "choices": [
+      "Les noyaux des atomes changent systématiquement.",
+      "La masse totale disparaît partiellement.",
+      "Les atomes se conservent mais se réorganisent.",
+      "Le nombre de protons d'un élément change."
+    ],
+    "correctIndex": 2,
+    "explanation": "Dans une réaction chimique, les atomes sont conservés. Ils changent seulement de partenaires et d'organisation."
+  },
+  {
+    "id": "ctm_legacy_3_9",
+    "moduleId": "constitution-transformations",
+    "lessonId": "corps-purs-et-melanges",
+    "type": "mcq",
+    "difficulty": "advanced",
+    "prompt": "Laquelle de ces grandeurs n'a pas d'unité ?",
+    "choices": [
+      "La masse molaire M",
+      "La densité d",
+      "La concentration en masse Cm",
+      "La quantité de matière n"
+    ],
+    "correctIndex": 1,
+    "explanation": "La densité est un rapport entre deux masses volumiques. Elle n'a donc pas d'unité."
+  },
+  {
+    "id": "ctm_legacy_3_10",
+    "moduleId": "constitution-transformations",
+    "lessonId": "transformations-nucleaires",
+    "type": "mcq",
+    "difficulty": "advanced",
+    "prompt": "Dans une fusion nucléaire, on observe principalement :",
+    "choices": [
+      "La réunion de noyaux légers pour former un noyau plus lourd.",
+      "La dissolution d'un solide dans un liquide.",
+      "Le partage d'électrons entre atomes.",
+      "La séparation d'un mélange homogène par filtration."
+    ],
+    "correctIndex": 0,
+    "explanation": "La fusion nucléaire associe des noyaux légers, comme dans le Soleil, et libère une grande quantité d'énergie."
+  },
+  {
+    "id": "ctm_legacy_3_11",
+    "moduleId": "constitution-transformations",
+    "lessonId": "mole",
+    "type": "mcq",
+    "difficulty": "advanced",
+    "prompt": "Une masse de 88 g de CO2 correspond à combien de moles ? Donnée : M(CO2) = 44 g/mol.",
+    "choices": [
+      "0,5 mol",
+      "1 mol",
+      "2 mol",
+      "4 mol"
+    ],
+    "correctIndex": 2,
+    "explanation": "n = m / M = 88 / 44 = 2 mol."
+  },
+  {
+    "id": "ctm_legacy_3_12",
+    "moduleId": "constitution-transformations",
+    "lessonId": "transformations-chimiques",
+    "type": "mcq",
+    "difficulty": "advanced",
+    "prompt": "Dans 3 H2 + N2 → 2 NH3, si l'on dispose de 6 mol de H2 et 1 mol de N2, le réactif limitant est :",
+    "choices": [
+      "H2",
+      "N2",
+      "NH3",
+      "Aucun, le mélange est stœchiométrique"
+    ],
+    "correctIndex": 1,
+    "explanation": "Le rapport stœchiométrique attendu est 3 pour 1. Pour consommer 1 mol de N2, il faut 3 mol de H2. Ici on dispose de 6 mol de H2 : le dihydrogène est en excès, donc N2 est le réactif limitant."
+  },
+  {
+    "id": "ctm_legacy_3_13",
+    "moduleId": "constitution-transformations",
+    "lessonId": "solutions-aqueuses",
+    "type": "mcq",
+    "difficulty": "advanced",
+    "prompt": "Quelle relation permet de calculer une concentration en masse ?",
+    "choices": [
+      "Cm = V / m",
+      "Cm = m / V",
+      "Cm = n / M",
+      "Cm = ρ / d"
+    ],
+    "correctIndex": 1,
+    "explanation": "La concentration en masse se calcule par Cm = masse de soluté / volume de solution."
+  },
+  {
+    "id": "ctm_legacy_3_14",
+    "moduleId": "constitution-transformations",
+    "lessonId": "corps-purs-et-melanges",
+    "type": "mcq",
+    "difficulty": "advanced",
+    "prompt": "Une carte mentale correcte du chapitre doit relier en priorité :",
+    "choices": [
+      "Observation macroscopique, modèle microscopique et transformations.",
+      "Uniquement les calculs de masse molaire.",
+      "Uniquement les symboles nucléaires.",
+      "Seulement les méthodes de séparation."
+    ],
+    "correctIndex": 0,
+    "explanation": "Le fil directeur du thème est de relier ce qu'on observe, le modèle particulaire et les transformations de la matière."
+  },
+  {
+    "id": "ctm_legacy_3_15",
+    "moduleId": "constitution-transformations",
+    "lessonId": "mole",
+    "type": "mcq",
+    "difficulty": "advanced",
+    "prompt": "Si 0,50 mol de O2 réagit selon 2 H2 + O2 → 2 H2O avec du H2 en excès, la quantité maximale de H2O formée est :",
+    "choices": [
+      "0,25 mol",
+      "0,50 mol",
+      "1,0 mol",
+      "2,0 mol"
+    ],
+    "correctIndex": 2,
+    "explanation": "Le coefficient de H2O est le double de celui de O2. Donc 0,50 mol de O2 peut former 1,0 mol de H2O."
+  },
+  {
+    "id": "ctm_legacy_3_16",
+    "moduleId": "constitution-transformations",
+    "lessonId": "transformations-nucleaires",
+    "type": "mcq",
+    "difficulty": "advanced",
+    "prompt": "Quel énoncé distingue correctement réaction chimique et réaction nucléaire ?",
+    "choices": [
+      "Dans les deux cas, seuls les électrons changent.",
+      "Une réaction nucléaire modifie les noyaux, pas une réaction chimique.",
+      "Une réaction chimique modifie les noyaux, pas une réaction nucléaire.",
+      "Aucune des deux ne conserve quoi que ce soit."
+    ],
+    "correctIndex": 1,
+    "explanation": "Une transformation nucléaire implique une modification du noyau. Une transformation chimique réorganise seulement les électrons et les liaisons."
+  },
+  {
+    "id": "ctm_legacy_3_17",
+    "moduleId": "constitution-transformations",
+    "lessonId": "corps-purs-et-melanges",
+    "type": "mcq",
+    "difficulty": "advanced",
+    "prompt": "Pour une espèce de densité 0,92 et de masse 46 g, le volume vaut environ :",
+    "choices": [
+      "42,3 mL",
+      "46 mL",
+      "50,0 mL",
+      "92 mL"
+    ],
+    "correctIndex": 2,
+    "explanation": "La densité 0,92 signifie ρ = 0,92 g/mL. Donc V = m / ρ = 46 / 0,92 = 50,0 mL."
+  },
+  {
+    "id": "ctm_legacy_3_18",
+    "moduleId": "constitution-transformations",
+    "lessonId": "stabilite-elements",
+    "type": "mcq",
+    "difficulty": "advanced",
+    "prompt": "La configuration électronique 1s² 2s² 2p⁶ correspond à un atome stable de type :",
+    "choices": [
+      "Gaz noble à couche externe saturée.",
+      "Métal alcalin très réactif.",
+      "Ion toujours chargé positivement.",
+      "Noyau radioactif."
+    ],
+    "correctIndex": 0,
+    "explanation": "Cette configuration remplit complètement la couche externe n = 2 : c'est une configuration stable de gaz noble."
+  },
+  {
+    "id": "ctm_legacy_3_19",
+    "moduleId": "constitution-transformations",
+    "lessonId": "effets-thermiques",
+    "type": "mcq",
+    "difficulty": "advanced",
+    "prompt": "Dans une transformation physique de l'eau, laquelle de ces grandeurs reste inchangée pour l'entité chimique ?",
+    "choices": [
+      "La formule H2O.",
+      "L'état physique.",
+      "L'agitation thermique.",
+      "Le volume de l'échantillon."
+    ],
+    "correctIndex": 0,
+    "explanation": "Lors d'une transformation physique, l'espèce chimique ne change pas : la molécule reste H2O."
+  },
+  {
+    "id": "ctm_legacy_3_20",
+    "moduleId": "constitution-transformations",
+    "lessonId": "solutions-aqueuses",
+    "type": "mcq",
+    "difficulty": "advanced",
+    "prompt": "Une solution a une concentration en masse de 5,0 g/L et un volume de 1,2 L. La masse de soluté dissoute est :",
+    "choices": [
+      "4,2 g",
+      "5,0 g",
+      "6,0 g",
+      "12 g"
+    ],
+    "correctIndex": 2,
+    "explanation": "m = Cm × V = 5,0 × 1,2 = 6,0 g."
   }
 ]

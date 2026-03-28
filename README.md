@@ -70,6 +70,69 @@ To add a new module:
 
 Cards are synchronized into the single deck stored in SQLite. Existing review progress is preserved when card ids stay stable.
 
+## Persistence Model
+
+The app separates **content** from **learner progress**.
+
+### Content
+
+Content lives in `content/` and is versionable:
+
+- `content/curriculum.json`: top-level module ordering and metadata
+- `content/modules/<slug>/module.json`: module metadata and chapter list
+- `content/modules/<slug>/lessons/*.md`: theory content
+- `content/modules/<slug>/exercises.json`: module exercises
+- `content/modules/<slug>/cards.json`: source cards linked to modules and lessons
+
+### Runtime Deck
+
+The learner-facing deck lives in `data/app.db`.
+
+The source `cards.json` files are synchronized into SQLite on startup. The schema now separates:
+
+- `cards`: the shared card catalog
+- `user_cards`: the live review state for one learner
+
+That split keeps the app ready for future multi-user support without changing the frontend flow today.
+
+The database stores the live review state for each card in `user_cards`:
+
+- prompt and answer
+- module and lesson links
+- current interval
+- due date
+- ease factor
+- review count and lapse count
+
+### Learner Progress
+
+Learner progress also lives in `data/app.db`:
+
+- `users`: learner identities
+- `user_cards`: current state of each card for a given learner
+- `review_events`: review history
+- `exercise_attempts`: exercise history
+
+Metrics are derived from these tables instead of being stored as fragile aggregate blobs.
+
+### Single Learner Today, Multi-User Later
+
+The current app still behaves as a single-learner app.
+
+The backend uses a fixed learner id through `SIF_ACTIVE_USER_ID`, defaulting to `default-user`. There is no login screen yet, but the persistence model is already shaped so a future login layer can attach progress to multiple users without redesigning the deck model.
+
+### Portability
+
+The backend resolves paths relative to the repository root, not to a machine-specific absolute path.
+
+That means:
+
+- the repository can be moved to another directory or machine;
+- `content/` remains portable;
+- if `data/app.db` is missing, the database is recreated automatically on startup.
+
+If the database is recreated, content and source cards are restored from `content/`, but learner progress and live review state are reset unless an old `app.db` is carried over.
+
 ## Repository Notes
 
 - The app is intentionally framework-light.

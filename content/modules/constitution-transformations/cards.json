@@ -3,120 +3,1148 @@
     "id": "ctm_card_01",
     "prompt": "Qu'est-ce qu'un corps pur ?",
     "answer": "Un corps constitué d'une seule espèce chimique.",
-    "moduleIds": ["constitution-transformations"],
-    "lessonIds": ["corps-purs-et-melanges"],
-    "tags": ["definition", "macroscopique"]
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "corps-purs-et-melanges"
+    ],
+    "tags": [
+      "definition",
+      "macroscopique"
+    ]
   },
   {
     "id": "ctm_card_02",
     "prompt": "Quelle est la différence entre un mélange homogène et un mélange hétérogène ?",
     "answer": "Un mélange homogène paraît uniforme à l'oeil nu, un mélange hétérogène présente plusieurs phases visibles.",
-    "moduleIds": ["constitution-transformations"],
-    "lessonIds": ["corps-purs-et-melanges"],
-    "tags": ["definition", "melanges"]
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "corps-purs-et-melanges"
+    ],
+    "tags": [
+      "definition",
+      "melanges"
+    ]
   },
   {
     "id": "ctm_card_03",
     "prompt": "Quel test met en évidence la présence d'eau ?",
     "answer": "Le sulfate de cuivre anhydre, qui devient bleu en présence d'eau.",
-    "moduleIds": ["constitution-transformations"],
-    "lessonIds": ["corps-purs-et-melanges"],
-    "tags": ["tests-chimiques"]
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "corps-purs-et-melanges"
+    ],
+    "tags": [
+      "tests-chimiques"
+    ]
   },
   {
     "id": "ctm_card_04",
     "prompt": "Dans une solution aqueuse, quel est le rôle du solvant ?",
     "answer": "Le solvant est l'espèce majoritaire qui dissout le soluté ; dans une solution aqueuse, c'est l'eau.",
-    "moduleIds": ["constitution-transformations"],
-    "lessonIds": ["solutions-aqueuses"],
-    "tags": ["solutions"]
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "solutions-aqueuses"
+    ],
+    "tags": [
+      "solutions"
+    ]
   },
   {
     "id": "ctm_card_05",
     "prompt": "Donne la formule de la concentration en masse.",
     "answer": "Cm = m / V, avec la masse de soluté sur le volume de solution.",
-    "moduleIds": ["constitution-transformations"],
-    "lessonIds": ["solutions-aqueuses"],
-    "tags": ["formule", "solutions"]
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "solutions-aqueuses"
+    ],
+    "tags": [
+      "formule",
+      "solutions"
+    ]
   },
   {
     "id": "ctm_card_06",
     "prompt": "Que représente le numéro atomique Z ?",
     "answer": "Le nombre de protons dans le noyau.",
-    "moduleIds": ["constitution-transformations"],
-    "lessonIds": ["macroscopique-microscopique"],
-    "tags": ["atome"]
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "macroscopique-microscopique"
+    ],
+    "tags": [
+      "atome"
+    ]
   },
   {
     "id": "ctm_card_07",
     "prompt": "Comment calcule-t-on le nombre de neutrons ?",
     "answer": "N = A - Z, où A est le nombre de masse et Z le numéro atomique.",
-    "moduleIds": ["constitution-transformations"],
-    "lessonIds": ["macroscopique-microscopique"],
-    "tags": ["atome", "calcul"]
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "macroscopique-microscopique"
+    ],
+    "tags": [
+      "atome",
+      "calcul"
+    ]
   },
   {
     "id": "ctm_card_08",
     "prompt": "Pourquoi les gaz nobles sont-ils importants dans ce chapitre ?",
     "answer": "Leur stabilité sert de repère pour comprendre la formation d'ions et de molécules stables.",
-    "moduleIds": ["constitution-transformations"],
-    "lessonIds": ["stabilite-elements"],
-    "tags": ["configuration-electronique"]
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "stabilite-elements"
+    ],
+    "tags": [
+      "configuration-electronique"
+    ]
   },
   {
     "id": "ctm_card_09",
     "prompt": "Combien d'entités contient une mole ?",
     "answer": "Une mole contient 6,022 x 10^23 entités élémentaires.",
-    "moduleIds": ["constitution-transformations"],
-    "lessonIds": ["mole"],
-    "tags": ["mole"]
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "mole"
+    ],
+    "tags": [
+      "mole"
+    ]
   },
   {
     "id": "ctm_card_10",
     "prompt": "Quelle est la différence entre transformation physique et transformation chimique ?",
     "answer": "Une transformation physique change l'état ou l'aspect sans changer l'espèce chimique ; une transformation chimique forme de nouvelles espèces.",
-    "moduleIds": ["constitution-transformations"],
-    "lessonIds": ["effets-thermiques", "transformations-chimiques"],
-    "tags": ["transformations"]
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "effets-thermiques",
+      "transformations-chimiques"
+    ],
+    "tags": [
+      "transformations"
+    ]
   },
   {
     "id": "ctm_card_11",
     "prompt": "Qu'est-ce qu'un réactif limitant ?",
     "answer": "Le réactif entièrement consommé en premier, dont la disparition arrête la transformation chimique.",
-    "moduleIds": ["constitution-transformations"],
-    "lessonIds": ["transformations-chimiques"],
-    "tags": ["chimie", "stoechiometrie"]
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "transformations-chimiques"
+    ],
+    "tags": [
+      "chimie",
+      "stoechiometrie"
+    ]
   },
   {
     "id": "ctm_card_12",
     "prompt": "À quoi sert une chromatographie sur couche mince ?",
     "answer": "À comparer ou identifier des espèces chimiques à partir de la migration de taches.",
-    "moduleIds": ["constitution-transformations"],
-    "lessonIds": ["synthese"],
-    "tags": ["ccm", "synthese"]
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "synthese"
+    ],
+    "tags": [
+      "ccm",
+      "synthese"
+    ]
   },
   {
     "id": "ctm_card_13",
     "prompt": "Quelle différence fondamentale sépare une transformation nucléaire d'une transformation chimique ?",
     "answer": "La transformation nucléaire modifie le noyau ; la transformation chimique modifie seulement les espèces formées à partir des électrons et liaisons.",
-    "moduleIds": ["constitution-transformations"],
-    "lessonIds": ["transformations-nucleaires"],
-    "tags": ["nucleaire"]
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "transformations-nucleaires"
+    ],
+    "tags": [
+      "nucleaire"
+    ]
   },
   {
     "id": "ctm_card_14",
     "prompt": "Que signifie qu'un atome neutre est électriquement neutre ?",
     "answer": "Il possède autant de protons que d'électrons.",
-    "moduleIds": ["constitution-transformations"],
-    "lessonIds": ["macroscopique-microscopique"],
-    "tags": ["atome", "charge"]
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "macroscopique-microscopique"
+    ],
+    "tags": [
+      "atome",
+      "charge"
+    ]
   },
   {
     "id": "ctm_card_15",
     "prompt": "Donne deux exemples de transformations physiques.",
     "answer": "Par exemple la fusion de la glace et la vaporisation de l'eau.",
-    "moduleIds": ["constitution-transformations"],
-    "lessonIds": ["effets-thermiques"],
-    "tags": ["transformations-physiques"]
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "effets-thermiques"
+    ],
+    "tags": [
+      "transformations-physiques"
+    ]
+  },
+  {
+    "id": "cm_2",
+    "prompt": "Qu'est-ce qu'un mélange homogène ?",
+    "answer": "Un mélange dans lequel on ne peut pas distinguer les différents constituants à l'œil nu.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "corps-purs-et-melanges"
+    ],
+    "tags": [
+      "constitution-de-la-matière",
+      "corps-purs-et-melanges"
+    ]
+  },
+  {
+    "id": "cm_3",
+    "prompt": "Quelle est la différence entre un soluté et un solvant ?",
+    "answer": "Le solvant est le constituant majoritaire (ex: l'eau), le soluté est l'espèce chimique dissoute (ex: le sel).",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "solutions-aqueuses"
+    ],
+    "tags": [
+      "constitution-de-la-matière",
+      "corps-purs-et-melanges"
+    ]
+  },
+  {
+    "id": "cm_4",
+    "prompt": "Comment calcule-t-on la masse volumique (ρ) et quelle est son unité usuelle ?",
+    "answer": "ρ = m / V. En unités S.I, c'est le kg/m³, mais on l'exprime souvent en g/mL ou en g/cm³.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "corps-purs-et-melanges"
+    ],
+    "tags": [
+      "constitution-de-la-matière",
+      "corps-purs-et-melanges"
+    ]
+  },
+  {
+    "id": "cm_5",
+    "prompt": "Qu'est-ce que la concentration en masse (Cm) ?",
+    "answer": "C'est la masse de soluté dissoute par litre de solution : Cm = m(soluté) / V(solution).",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "solutions-aqueuses"
+    ],
+    "tags": [
+      "constitution-de-la-matière",
+      "corps-purs-et-melanges"
+    ]
+  },
+  {
+    "id": "cm_6",
+    "prompt": "De quoi est constitué le noyau atomique ?",
+    "answer": "De nucléons, qui sont divisés en protons (charge positive) et en neutrons (charge nulle).",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "macroscopique-microscopique"
+    ],
+    "tags": [
+      "atomes-et-molécules",
+      "macroscopique-microscopique"
+    ]
+  },
+  {
+    "id": "cm_8",
+    "prompt": "Que représente le nombre de masse A ?",
+    "answer": "C'est le nombre total de nucléons (protons + neutrons) présents dans le noyau.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "macroscopique-microscopique"
+    ],
+    "tags": [
+      "atomes-et-molécules",
+      "macroscopique-microscopique"
+    ]
+  },
+  {
+    "id": "cm_9",
+    "prompt": "Qu'est-ce que des isotopes ?",
+    "answer": "Ce sont des atomes d'un même élément chimique (même Z) mais qui ont un nombre différent de neutrons (donc un A différent).",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "macroscopique-microscopique"
+    ],
+    "tags": [
+      "atomes-et-molécules",
+      "macroscopique-microscopique"
+    ]
+  },
+  {
+    "id": "cm_10",
+    "prompt": "Quelle est la règle de l'octet et du duet ?",
+    "answer": "Les atomes cherchent à obtenir la configuration électronique du gaz noble le plus proche en ayant 2 électrons (duet) ou 8 électrons (octet) sur leur couche externe pour être stables.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "stabilite-elements"
+    ],
+    "tags": [
+      "atomes-et-molécules",
+      "macroscopique-microscopique"
+    ]
+  },
+  {
+    "id": "cm_11",
+    "prompt": "Comment sont rangés les éléments dans le tableau périodique ?",
+    "answer": "Ils sont classés par numéro atomique (Z) croissant.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "stabilite-elements"
+    ],
+    "tags": [
+      "tableau-périodique",
+      "stabilite-elements"
+    ]
+  },
+  {
+    "id": "cm_12",
+    "prompt": "Qu'ont en commun les éléments d'une même colonne du tableau périodique ?",
+    "answer": "Ils possèdent le même nombre d'électrons de valence (sur leur couche externe), ce qui leur confère des propriétés chimiques similaires.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "stabilite-elements"
+    ],
+    "tags": [
+      "tableau-périodique",
+      "stabilite-elements"
+    ]
+  },
+  {
+    "id": "cm_15",
+    "prompt": "Qu'est-ce qu'une transformation exothermique ?",
+    "answer": "C'est une transformation qui libère de l'énergie thermique vers le milieu extérieur (le système chauffe son environnement).",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "transformations-chimiques"
+    ],
+    "tags": [
+      "transformations",
+      "transformations-chimiques"
+    ]
+  },
+  {
+    "id": "cm_16",
+    "prompt": "Qu'est-ce que la fission nucléaire ?",
+    "answer": "C'est la scission d'un atome lourd (souvent sous l'impact d'un neutron) en deux noyaux plus légers, libérant beaucoup d'énergie.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "transformations-nucleaires"
+    ],
+    "tags": [
+      "transformations-nucléaires",
+      "transformations-nucleaires"
+    ]
+  },
+  {
+    "id": "cm_17",
+    "prompt": "Qu'est-ce que la fusion nucléaire et où se produit-elle naturellement ?",
+    "answer": "C'est l'assemblage de deux noyaux légers pour en former un plus lourd, la réaction libérant une énergie colossale. Elle a lieu, par exemple, au cœur du Soleil.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "transformations-nucleaires"
+    ],
+    "tags": [
+      "transformations-nucléaires",
+      "transformations-nucleaires"
+    ]
+  },
+  {
+    "id": "cm_18",
+    "prompt": "Quelles lois régissent les réactions nucléaires ?",
+    "answer": "Les lois de conservation de Soddy : il y a conservation du nombre de charge (Z) et du nombre de masse de nucléons (A).",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "transformations-nucleaires"
+    ],
+    "tags": [
+      "transformations-nucléaires",
+      "transformations-nucleaires"
+    ]
+  },
+  {
+    "id": "cm_calc_1",
+    "prompt": "Une substance a une masse m = 10 g et un volume V = 5 mL. Quelle est sa masse volumique ρ ?",
+    "answer": "ρ = m / V = 10 / 5 = 2 g/mL.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "corps-purs-et-melanges"
+    ],
+    "tags": [
+      "calculs-tête",
+      "macroscopique-microscopique"
+    ]
+  },
+  {
+    "id": "cm_calc_2",
+    "prompt": "La masse volumique de l'or est d'environ 19 g/cm³. Quelle est la masse d'un cube d'or de 2 cm³ ?",
+    "answer": "m = ρ × V = 19 × 2 = 38 g.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "corps-purs-et-melanges"
+    ],
+    "tags": [
+      "calculs-tête",
+      "macroscopique-microscopique"
+    ]
+  },
+  {
+    "id": "cm_calc_3",
+    "prompt": "Un liquide a une masse volumique de 800 kg/m³. Quelle est sa densité par rapport à l'eau (ρ_eau = 1000 kg/m³) ?",
+    "answer": "d = ρ / ρ_eau = 800 / 1000 = 0.8.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "corps-purs-et-melanges"
+    ],
+    "tags": [
+      "calculs-tête",
+      "macroscopique-microscopique"
+    ]
+  },
+  {
+    "id": "cm_calc_4",
+    "prompt": "Tu dissous 5 g de sel dans un volume total de 0.5 L de solution. Quelle est la concentration en masse (Cm) ?",
+    "answer": "Cm = m / V = 5 / 0.5 = 10 g/L.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "solutions-aqueuses"
+    ],
+    "tags": [
+      "calculs-tête",
+      "macroscopique-microscopique"
+    ]
+  },
+  {
+    "id": "cm_calc_5",
+    "prompt": "On souhaite préparer 2 L d'une solution sucrée avec une concentration Cm = 3 g/L. Quelle masse de sucre faut-il ?",
+    "answer": "m = Cm × V = 3 × 2 = 6 g.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "solutions-aqueuses"
+    ],
+    "tags": [
+      "calculs-tête",
+      "solutions-aqueuses"
+    ]
+  },
+  {
+    "id": "cm_iso_1",
+    "prompt": "Un atome X possède Z = 6 et N = 6 neutrons. Quel est son nombre de masse A ?",
+    "answer": "A = Z + N = 6 + 6 = 12. C'est le Carbone 12.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "macroscopique-microscopique"
+    ],
+    "tags": [
+      "atomes",
+      "macroscopique-microscopique"
+    ]
+  },
+  {
+    "id": "cm_iso_2",
+    "prompt": "L'isotope Carbone 14 a un nombre de masse A = 14 et Z = 6. Combien a-t-il de neutrons ?",
+    "answer": "N = A - Z = 14 - 6 = 8 neutrons.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "macroscopique-microscopique"
+    ],
+    "tags": [
+      "atomes",
+      "macroscopique-microscopique"
+    ]
+  },
+  {
+    "id": "cm_iso_3",
+    "prompt": "Le noyau de l'Oxygène 16 contient 8 neutrons. Quel est son numéro atomique Z ?",
+    "answer": "Z = A - N = 16 - 8 = 8.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "macroscopique-microscopique"
+    ],
+    "tags": [
+      "atomes",
+      "macroscopique-microscopique"
+    ]
+  },
+  {
+    "id": "cm_elec_1",
+    "prompt": "Combien d'électrons possède un atome neutre de Sodium (Na), sachant que Z = 11 ?",
+    "answer": "11 électrons (autant que de protons).",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "stabilite-elements"
+    ],
+    "tags": [
+      "électrons",
+      "stabilite-elements"
+    ]
+  },
+  {
+    "id": "cm_elec_2",
+    "prompt": "L'ion Sodium Na⁺ provient de l'atome Na (Z=11). Combien d'électrons possède cet ion ?",
+    "answer": "10 électrons. (Il a perdu 1 électron pour acquérir la structure du gaz noble le plus proche).",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "stabilite-elements"
+    ],
+    "tags": [
+      "électrons",
+      "stabilite-elements"
+    ]
+  },
+  {
+    "id": "cm_elec_3",
+    "prompt": "L'ion Oxyde O²⁻ provient de l'atome d'Oxygène (Z=8). Combien d'électrons possède cet ion ?",
+    "answer": "10 électrons. (Il a gagné 2 électrons).",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "stabilite-elements"
+    ],
+    "tags": [
+      "électrons",
+      "stabilite-elements"
+    ]
+  },
+  {
+    "id": "cm_conf_1",
+    "prompt": "Quelle est la configuration électronique du Lithium (Z = 3) ?",
+    "answer": "1s² 2s¹.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "stabilite-elements"
+    ],
+    "tags": [
+      "configuration",
+      "stabilite-elements"
+    ]
+  },
+  {
+    "id": "cm_conf_2",
+    "prompt": "Quelle est la configuration électronique de l'Azote (Z = 7) ?",
+    "answer": "1s² 2s² 2p³.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "stabilite-elements"
+    ],
+    "tags": [
+      "configuration",
+      "stabilite-elements"
+    ]
+  },
+  {
+    "id": "cm_conf_3",
+    "prompt": "Quelle est la configuration électronique du Néon (Z = 10) ?",
+    "answer": "1s² 2s² 2p⁶. (Sa couche externe n=2 est pleine : 8 électrons).",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "stabilite-elements"
+    ],
+    "tags": [
+      "configuration",
+      "stabilite-elements"
+    ]
+  },
+  {
+    "id": "cm_val_1",
+    "prompt": "Combien d'électrons de valence possède l'atome d'Oxygène (Z=8, config: 1s² 2s² 2p⁴) ?",
+    "answer": "6 électrons de valence (ceux de la couche n=2 : 2+4 = 6).",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "stabilite-elements"
+    ],
+    "tags": [
+      "électrons-de-valence",
+      "stabilite-elements"
+    ]
+  },
+  {
+    "id": "cm_val_2",
+    "prompt": "Combien d'électrons de valence possède l'atome de Carbone (Z=6, config: 1s² 2s² 2p²) ?",
+    "answer": "4 électrons de valence (ceux de la couche n=2). Le carbone peut ainsi former 4 liaisons.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "stabilite-elements"
+    ],
+    "tags": [
+      "électrons-de-valence",
+      "stabilite-elements"
+    ]
+  },
+  {
+    "id": "cm_nuc_1",
+    "prompt": "Observation : ²³⁵U + ¹n → ¹⁴⁰Xe + ⁹⁴Sr + x ¹n. En appliquant la loi de Soddy sur la masse, déterminer x.",
+    "answer": "235 + 1 = 140 + 94 + x. Soit 236 = 234 + x. Donc x = 2.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "transformations-nucleaires"
+    ],
+    "tags": [
+      "t-nucléaires",
+      "transformations-nucleaires"
+    ]
+  },
+  {
+    "id": "cm_nuc_2",
+    "prompt": "Fusion : ²H + ³H → ᴬHe + ¹n. Déterminez A.",
+    "answer": "2 + 3 = A + 1. Donc A = 4 (Hélium-4).",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "transformations-nucleaires"
+    ],
+    "tags": [
+      "t-nucléaires",
+      "transformations-nucleaires"
+    ]
+  },
+  {
+    "id": "cm_mol_1",
+    "prompt": "La masse molaire de l'eau est M = 18 g/mol. Quelle quantité de matière (n, en moles) y a-t-il dans 36 g d'eau ?",
+    "answer": "n = m / M = 36 / 18 = 2 moles.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "mole"
+    ],
+    "tags": [
+      "matière-mole",
+      "mole"
+    ]
+  },
+  {
+    "id": "cm_mol_2",
+    "prompt": "On a 0.5 mole de Carbone. Sa masse molaire est de 12 g/mol. Quelle en est la masse en grammes ?",
+    "answer": "m = n × M = 0.5 × 12 = 6 g.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "mole"
+    ],
+    "tags": [
+      "matière-mole",
+      "mole"
+    ]
+  },
+  {
+    "id": "cm_lewis_1",
+    "prompt": "Qu'est-ce que le modèle de Lewis pour un atome/molécule ?",
+    "answer": "Une représentation symbolisant les atomes par leur symbole et leurs électrons de valence par des tirets (doublets liants ou non liants).",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "stabilite-elements"
+    ],
+    "tags": [
+      "modèle-de-lewis",
+      "stabilite-elements"
+    ]
+  },
+  {
+    "id": "cm_lewis_2",
+    "prompt": "Quelle est la différence fondamentale entre un doublet liant et un doublet non liant ?",
+    "answer": "Un doublet liant (liaison covalente) relie deux atomes entre eux. Un doublet non liant appartient en propre à un seul atome (il n'est pas engagé dans une liaison).",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "stabilite-elements"
+    ],
+    "tags": [
+      "modèle-de-lewis",
+      "stabilite-elements"
+    ]
+  },
+  {
+    "id": "cm_lewis_3",
+    "prompt": "Comment découvrir combien de liaisons (doublets liants) un atome a tendance à former ?",
+    "answer": "Ce nombre correspond au nombre d'électrons qu'il lui manque sur sa couche de valence pour respecter la règle de l'octet ou du duet (ex: l'Oxygène a 6 e-, il lui en manque 2 = 2 liaisons).",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "stabilite-elements"
+    ],
+    "tags": [
+      "modèle-de-lewis",
+      "stabilite-elements"
+    ]
+  },
+  {
+    "id": "cm_lewis_4",
+    "prompt": "Qu'est-ce qu'une lacune électronique ?",
+    "answer": "C'est un 'vide' (symbolisé par un petit rectangle) indiquant qu'un atome (ex: H+ ou le Bore) n'a pas atteint la stabilité (octet/duet). Il lui manque carrément un doublet !",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "stabilite-elements"
+    ],
+    "tags": [
+      "modèle-de-lewis",
+      "stabilite-elements"
+    ]
+  },
+  {
+    "id": "cm_lewis_5",
+    "prompt": "Décrivez de tête le schéma de Lewis de la molécule d'eau (H₂O).",
+    "answer": "L'atome d'Oxygène est au centre et possède 2 doublets non-liants sur lui-même. Il est relié par 2 liaisons covalentes simples à deux atomes d'Hydrogène.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "stabilite-elements"
+    ],
+    "tags": [
+      "modèle-de-lewis",
+      "stabilite-elements"
+    ]
+  },
+  {
+    "id": "cm_lewis_6",
+    "prompt": "Décrivez le schéma de Lewis du dioxyde de carbone (CO₂).",
+    "answer": "Le Carbone (C) est au centre et forme deux 'doubles liaisons' (O=C=O). Chaque atome d'Oxygène (O) possède 2 doublets non-liants.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "stabilite-elements"
+    ],
+    "tags": [
+      "modèle-de-lewis",
+      "stabilite-elements"
+    ]
+  },
+  {
+    "id": "cm_macro_6",
+    "prompt": "Qu'est-ce qu'une espèce chimique ?",
+    "answer": "C'est un ensemble d'entités chimiques identiques, comme des atomes, des molécules ou des ions identiques.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "corps-purs-et-melanges"
+    ],
+    "tags": [
+      "description-macroscopique",
+      "corps-purs-et-melanges"
+    ]
+  },
+  {
+    "id": "cm_macro_7",
+    "prompt": "Quelle différence essentielle y a-t-il entre un solide, un liquide et un gaz ?",
+    "answer": "Dans un solide, les entités sont fortement liées et peu mobiles ; dans un liquide, elles restent proches mais mobiles ; dans un gaz, elles sont très dispersées et très mobiles.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "corps-purs-et-melanges"
+    ],
+    "tags": [
+      "description-macroscopique",
+      "corps-purs-et-melanges"
+    ]
+  },
+  {
+    "id": "cm_sep_1",
+    "prompt": "Quelle méthode utiliser pour séparer un sable non dissous d'une eau boueuse ?",
+    "answer": "La filtration, car elle permet de retenir le solide non dissous et de récupérer le liquide filtré.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "analyse-dune-solution"
+    ],
+    "tags": [
+      "séparation",
+      "analyse-dune-solution"
+    ]
+  },
+  {
+    "id": "cm_sep_2",
+    "prompt": "Pourquoi la filtration ne permet-elle pas de récupérer le sel dissous dans l'eau salée ?",
+    "answer": "Parce que le sel est dissous à l'échelle microscopique dans l'eau. Il traverse donc le filtre avec le solvant.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "analyse-dune-solution"
+    ],
+    "tags": [
+      "séparation",
+      "analyse-dune-solution"
+    ]
+  },
+  {
+    "id": "cm_sep_3",
+    "prompt": "Quelle méthode est la plus adaptée pour obtenir de l'eau pure à partir d'eau salée ?",
+    "answer": "La distillation : on vaporise l'eau puis on condense la vapeur pour récupérer le solvant pur.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "analyse-dune-solution"
+    ],
+    "tags": [
+      "séparation",
+      "analyse-dune-solution"
+    ]
+  },
+  {
+    "id": "cm_phys_1",
+    "prompt": "Pourquoi la fusion de la glace est-elle une transformation physique ?",
+    "answer": "Parce que l'espèce chimique ne change pas : avant comme après, il s'agit de molécules d'eau H2O.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "effets-thermiques"
+    ],
+    "tags": [
+      "transformations-physiques",
+      "effets-thermiques"
+    ]
+  },
+  {
+    "id": "cm_phys_2",
+    "prompt": "Citez les six changements d'état à connaître au lycée.",
+    "answer": "Fusion, solidification, vaporisation, liquéfaction (ou condensation), sublimation et condensation solide.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "effets-thermiques"
+    ],
+    "tags": [
+      "transformations-physiques",
+      "effets-thermiques"
+    ]
+  },
+  {
+    "id": "cm_micro_1",
+    "prompt": "Quelle différence entre un atome de chlore Cl et l'ion chlorure Cl⁻ ?",
+    "answer": "Ils ont le même noyau (même nombre de protons), mais l'ion chlorure possède un électron de plus que l'atome de chlore.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "macroscopique-microscopique"
+    ],
+    "tags": [
+      "atomes-et-ions",
+      "macroscopique-microscopique"
+    ]
+  },
+  {
+    "id": "cm_micro_2",
+    "prompt": "Dans les transformations chimiques ordinaires, que gagnent ou perdent les atomes pour devenir des ions ?",
+    "answer": "Ils gagnent ou perdent des électrons, jamais des protons.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "macroscopique-microscopique"
+    ],
+    "tags": [
+      "atomes-et-ions",
+      "macroscopique-microscopique"
+    ]
+  },
+  {
+    "id": "cm_chim_1",
+    "prompt": "Quels indices expérimentaux peuvent suggérer une transformation chimique ?",
+    "answer": "Un changement de couleur, l'apparition d'un gaz, la formation d'un précipité, une variation de température ou une émission de lumière.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "transformations-chimiques"
+    ],
+    "tags": [
+      "transformations-chimiques",
+      "transformations-chimiques"
+    ]
+  },
+  {
+    "id": "cm_chim_2",
+    "prompt": "Pourquoi ne faut-il jamais modifier les indices dans une formule pour équilibrer une équation chimique ?",
+    "answer": "Parce que les indices font partie de l'identité chimique de l'espèce. On équilibre uniquement avec des coefficients devant les formules.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "transformations-chimiques"
+    ],
+    "tags": [
+      "transformations-chimiques",
+      "transformations-chimiques"
+    ]
+  },
+  {
+    "id": "cm_stoe_1",
+    "prompt": "Que représentent concrètement les coefficients d'une équation chimique équilibrée ?",
+    "answer": "Ils donnent les proportions entre entités chimiques et entre quantités de matière. Par exemple, 1 mole, 2 moles, etc.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "transformations-chimiques"
+    ],
+    "tags": [
+      "stœchiométrie",
+      "transformations-chimiques"
+    ]
+  },
+  {
+    "id": "cm_stoe_2",
+    "prompt": "Comment reconnaître rapidement un réactif limitant ?",
+    "answer": "On compare les rapports quantité de matière / coefficient stœchiométrique pour chaque réactif. Le plus petit rapport correspond au réactif limitant.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "transformations-chimiques"
+    ],
+    "tags": [
+      "stœchiométrie",
+      "transformations-chimiques"
+    ]
+  },
+  {
+    "id": "cm_mol_3",
+    "prompt": "Quelle erreur fréquente faut-il éviter avec la mole ?",
+    "answer": "Penser qu'une mole est une masse ou un volume. Une mole est une quantité d'entités chimiques.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "mole"
+    ],
+    "tags": [
+      "matière-mole",
+      "mole"
+    ]
+  },
+  {
+    "id": "cm_app_1",
+    "prompt": "Pourquoi l'eau potable n'est-elle pas un corps pur, contrairement à l'eau distillée ?",
+    "answer": "Parce que l'eau potable contient des espèces dissoutes comme des ions minéraux, alors que l'eau distillée est constituée presque uniquement de molécules d'eau H2O.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "corps-purs-et-melanges"
+    ],
+    "tags": [
+      "applications-quotidiennes",
+      "corps-purs-et-melanges"
+    ]
+  },
+  {
+    "id": "cm_ind_1",
+    "prompt": "Pourquoi dit-on que l'acier est un alliage et non un corps pur ?",
+    "answer": "Parce qu'il contient principalement du fer, mais aussi du carbone et parfois d'autres éléments. C'est donc un mélange homogène solide.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "corps-purs-et-melanges"
+    ],
+    "tags": [
+      "applications-industrielles",
+      "corps-purs-et-melanges"
+    ]
+  },
+  {
+    "id": "cm_phys_3",
+    "prompt": "Pourquoi la distillation du pétrole est-elle une transformation physique et non chimique ?",
+    "answer": "Parce qu'elle sépare des espèces déjà présentes dans le mélange selon leurs températures d'ébullition, sans fabriquer de nouvelles espèces chimiques.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "effets-thermiques"
+    ],
+    "tags": [
+      "transformations-physiques",
+      "effets-thermiques"
+    ]
+  },
+  {
+    "id": "cm_chim_3",
+    "prompt": "Quels sont les produits de la combustion complète du butane dans le dioxygène ?",
+    "answer": "Elle forme du dioxyde de carbone CO2 et de l'eau H2O, avec dégagement d'énergie.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "transformations-chimiques"
+    ],
+    "tags": [
+      "transformations-chimiques",
+      "transformations-chimiques"
+    ]
+  },
+  {
+    "id": "cm_chim_4",
+    "prompt": "À quoi sert la synthèse industrielle de l'ammoniac par le procédé Haber-Bosch ?",
+    "answer": "Elle sert surtout à produire de l'ammoniac NH3 utilisé ensuite pour fabriquer des engrais azotés.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "transformations-chimiques"
+    ],
+    "tags": [
+      "transformations-chimiques",
+      "transformations-chimiques"
+    ]
+  },
+  {
+    "id": "cm_nuc_4",
+    "prompt": "À quoi sert la datation au carbone 14 ?",
+    "answer": "Elle permet d'estimer l'âge de restes organiques anciens en étudiant la décroissance radioactive du carbone 14.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "transformations-nucleaires"
+    ],
+    "tags": [
+      "t-nucléaires",
+      "transformations-nucleaires"
+    ]
+  },
+  {
+    "id": "cm_nuc_5",
+    "prompt": "Que signifie qualitativement la relation E = mc² ?",
+    "answer": "Qu'une petite perte de masse peut correspondre à une très grande énergie libérée, notamment dans certaines transformations nucléaires.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "transformations-nucleaires"
+    ],
+    "tags": [
+      "t-nucléaires",
+      "transformations-nucleaires"
+    ]
+  },
+  {
+    "id": "cm_mix_1",
+    "prompt": "Pourquoi l'air est-il un mélange homogène et non un corps pur ?",
+    "answer": "Parce qu'il contient plusieurs gaz, surtout du diazote et du dioxygène, uniformément répartis à l'échelle macroscopique.",
+    "moduleIds": [
+      "constitution-transformations"
+    ],
+    "lessonIds": [
+      "corps-purs-et-melanges"
+    ],
+    "tags": [
+      "description-macroscopique",
+      "corps-purs-et-melanges"
+    ]
   }
 ]

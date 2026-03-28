@@ -1,6 +1,10 @@
 const params = new URLSearchParams(window.location.search);
 const moduleId = params.get('id') || 'constitution-transformations';
 
+function pluralizeTentative(count) {
+    return `${count} tentative${count > 1 ? 's' : ''}`;
+}
+
 function findExercise(exercises, exerciseId) {
     return exercises.find((exercise) => exercise.id === exerciseId);
 }
@@ -11,12 +15,12 @@ function renderMetrics(metrics, reviewMetrics) {
             <article class="metric-card surface">
                 <div class="metric-label">Exactitude historique</div>
                 <div class="metric-value">${formatPercent(metrics.accuracyRate)}</div>
-                <div class="muted">Sur ${metrics.totalAttempts} tentative(s).</div>
+                <div class="muted">Taux de réussite sur l'ensemble du module, calculé sur ${pluralizeTentative(metrics.totalAttempts)}.</div>
             </article>
             <article class="metric-card surface">
                 <div class="metric-label">Exactitude récente</div>
                 <div class="metric-value">${formatPercent(metrics.recentAccuracyRate)}</div>
-                <div class="muted">Fenêtre courte pour détecter les dérives.</div>
+                <div class="muted">Taux de réussite sur les dernières tentatives, pour repérer une amélioration ou une dérive.</div>
             </article>
             <article class="metric-card surface">
                 <div class="metric-label">Couverture des exercices</div>
@@ -34,10 +38,10 @@ function renderMetrics(metrics, reviewMetrics) {
 
 function renderLessons(module) {
     return module.lessons.map((lesson, index) => `
-        <button class="lesson-link ${index === 0 ? 'is-active' : ''}" data-lesson-id="${lesson.id}">
+        <div class="lesson-link ${index === 0 ? 'is-active' : ''}" data-lesson-id="${lesson.id}">
             <span>${lesson.title}</span>
-            <span class="muted">→</span>
-        </button>
+            <button type="button" class="lesson-arrow" aria-label="Ouvrir ${lesson.title}" data-lesson-id="${lesson.id}">→</button>
+        </div>
     `).join('');
 }
 
@@ -77,9 +81,21 @@ function renderExercise(exercise, state) {
     `;
 }
 
+function renderCompletionBlock(module, metrics) {
+    return `
+        <article class="empty-card surface">
+            <h3>Parcours d'exercices terminé</h3>
+            <p class="soft-note">Tu as répondu aux ${metrics.totalExercises} exercices de ce module. Tu peux maintenant relire une leçon fragile, revenir au tableau de bord ou lancer la révision liée au module.</p>
+            <div class="actions" style="justify-content:center;">
+                <a class="btn btn-primary" href="review.html?module=${module.id}">Réviser ce module</a>
+                <a class="btn btn-secondary" href="index.html">Retour au tableau de bord</a>
+            </div>
+        </article>
+    `;
+}
+
 function attachLessonNavigation(module) {
     const lessonButtons = Array.from(document.querySelectorAll('[data-lesson-id]'));
-    const lessonTitle = document.getElementById('lesson-title');
     const lessonBody = document.getElementById('lesson-body');
 
     function activate(lessonId) {
@@ -90,12 +106,15 @@ function attachLessonNavigation(module) {
         if (!lesson) {
             return;
         }
-        lessonTitle.textContent = lesson.title;
         lessonBody.innerHTML = renderMarkdown(lesson.content);
     }
 
-    lessonButtons.forEach((button) => {
+    document.querySelectorAll('.lesson-arrow').forEach((button) => {
         button.addEventListener('click', () => activate(button.dataset.lessonId));
+        button.addEventListener('touchend', (event) => {
+            event.preventDefault();
+            activate(button.dataset.lessonId);
+        }, { passive: false });
     });
 
     if (module.lessons.length) {
@@ -133,6 +152,7 @@ async function bootModulePage() {
     try {
         const data = await apiGet(`/api/modules/${moduleId}`);
         const { module, metrics, reviewMetrics } = data;
+        let currentMetrics = metrics;
 
         root.innerHTML = `
             <section class="hero">
@@ -142,7 +162,6 @@ async function bootModulePage() {
                     <p class="hero-copy">${module.summary}</p>
                     <div class="actions">
                         <a class="btn btn-primary" href="review.html?module=${module.id}">Réviser ce module</a>
-                        <a class="btn btn-secondary" href="index.html">Retour au tableau de bord</a>
                     </div>
                 </article>
                 <article class="hero-card surface">
@@ -173,8 +192,9 @@ async function bootModulePage() {
                         <span class="eyebrow">Leçon active</span>
                         <span class="muted">Dernière activité : ${formatDateTime(metrics.lastActivityAt)}</span>
                     </div>
-                    <h2 id="lesson-title"></h2>
-                    <div class="lesson-content" id="lesson-body"></div>
+                    <div class="lesson-content" id="lesson-panel">
+                        <div id="lesson-body"></div>
+                    </div>
                 </article>
             </section>
 
@@ -188,6 +208,7 @@ async function bootModulePage() {
                 <div class="stack" id="exercise-list">
                     ${module.exercises.map((exercise) => renderExercise(exercise, state)).join('')}
                 </div>
+                <div id="exercise-completion"></div>
             </section>
         `;
 
@@ -211,10 +232,16 @@ async function bootModulePage() {
                 return;
             }
             const exercise = findExercise(module.exercises, exerciseId);
-            const selectedIndex = state.selectedIndexByExercise[exerciseId];
+            const card = target.closest('.exercise-card');
+            const checkedInput = card ? card.querySelector(`input[name="${exerciseId}"]:checked`) : null;
+            const selectedIndex = checkedInput ? Number(checkedInput.value) : state.selectedIndexByExercise[exerciseId];
+            state.selectedIndexByExercise[exerciseId] = selectedIndex;
             const nextMetrics = await submitExercise(exercise, selectedIndex, state);
+            currentMetrics = nextMetrics;
             document.getElementById('exercise-list').innerHTML = module.exercises.map((item) => renderExercise(item, state)).join('');
             document.querySelector('.grid-metrics').outerHTML = renderMetrics(nextMetrics, reviewMetrics);
+            const isComplete = Object.keys(state.resultByExercise).length === module.exercises.length;
+            document.getElementById('exercise-completion').innerHTML = isComplete ? renderCompletionBlock(module, currentMetrics) : '';
         });
     } catch (error) {
         root.innerHTML = `<article class="empty-card surface"><h2>Erreur</h2><p class="muted">${error.message}</p></article>`;

@@ -5,6 +5,13 @@ function escapeHtml(value) {
         .replaceAll('>', '&gt;');
 }
 
+function formatInlineMarkdown(value) {
+    return escapeHtml(value)
+        .replace(/`([^`]+)`/g, '<code>$1</code>')
+        .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+        .replace(/\*([^*]+)\*/g, '<em>$1</em>');
+}
+
 function renderMarkdown(markdown) {
     const lines = markdown.split('\n');
     const html = [];
@@ -26,19 +33,19 @@ function renderMarkdown(markdown) {
 
         if (line.startsWith('# ')) {
             closeListIfNeeded();
-            html.push(`<h1>${escapeHtml(line.slice(2))}</h1>`);
+            html.push(`<h1>${formatInlineMarkdown(line.slice(2))}</h1>`);
             continue;
         }
 
         if (line.startsWith('## ')) {
             closeListIfNeeded();
-            html.push(`<h2>${escapeHtml(line.slice(3))}</h2>`);
+            html.push(`<h2>${formatInlineMarkdown(line.slice(3))}</h2>`);
             continue;
         }
 
         if (line.startsWith('### ')) {
             closeListIfNeeded();
-            html.push(`<h3>${escapeHtml(line.slice(4))}</h3>`);
+            html.push(`<h3>${formatInlineMarkdown(line.slice(4))}</h3>`);
             continue;
         }
 
@@ -47,15 +54,12 @@ function renderMarkdown(markdown) {
                 html.push('<ul>');
                 inList = true;
             }
-            html.push(`<li>${escapeHtml(line.slice(2))}</li>`);
+            html.push(`<li>${formatInlineMarkdown(line.slice(2))}</li>`);
             continue;
         }
 
         closeListIfNeeded();
-        const paragraph = escapeHtml(line)
-            .replace(/`([^`]+)`/g, '<code>$1</code>')
-            .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
-            .replace(/\*([^*]+)\*/g, '<em>$1</em>');
+        const paragraph = formatInlineMarkdown(line);
         html.push(`<p>${paragraph}</p>`);
     }
 

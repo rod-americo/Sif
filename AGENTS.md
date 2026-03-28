@@ -27,6 +27,22 @@ Maintain and expand a personal study application for French `2nde` physics-chemi
 - Preserve card review history whenever card ids remain stable.
 - Avoid introducing frontend or backend frameworks unless there is a demonstrated need.
 
+## Persistence Rules
+
+- Treat `cards` as the shared catalog of card content.
+- Treat `user_cards` as learner-specific review state.
+- Treat `review_events` and `exercise_attempts` as learner-specific event logs.
+- The current app uses a fixed learner id through `SIF_ACTIVE_USER_ID`; this is intentional.
+- Do not collapse learner state back into `cards`, even if the app remains single-user for a while.
+
+## Future Login / Multi-User Notes
+
+- If login is introduced later, keep the current separation between shared content and learner state.
+- A login layer should select or create a row in `users`, then scope all progress reads and writes through that user id.
+- The frontend should not fetch raw `cards.json`; it should continue using the API backed by SQLite.
+- When adding simultaneous multi-user support, preserve the current module model and the single global deck model.
+- Do not create one physical deck table per learner or per module. Keep one shared card catalog and separate learner state by `user_id`.
+
 ## Content Rules
 
 - Interface and learning content should remain in French unless a file is explicitly internal documentation.

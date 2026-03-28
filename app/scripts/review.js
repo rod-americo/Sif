@@ -2,6 +2,10 @@ const reviewParams = new URLSearchParams(window.location.search);
 const reviewModuleId = reviewParams.get('module');
 let currentCard = null;
 
+function formatDaysLabel(days) {
+    return `${days} jour${days > 1 ? 's' : ''}`;
+}
+
 function summaryMarkup(summary, title) {
     return `
         <div class="grid-metrics">
@@ -24,6 +28,27 @@ function summaryMarkup(summary, title) {
                 <div class="metric-label">Erreur récente</div>
                 <div class="metric-value">${formatPercent(summary.recentErrorRate)}</div>
                 <div class="muted">Fenêtre glissante de 14 jours.</div>
+            </article>
+        </div>
+    `;
+}
+
+function loadingMarkup(title) {
+    return `
+        <article class="empty-card surface review-stage">
+            <h2>Préparation de la révision…</h2>
+            <p class="muted">Encore un instant.</p>
+        </article>
+        <div class="grid-metrics">
+            <article class="metric-card surface">
+                <div class="metric-label">${title}</div>
+                <div class="metric-value">…</div>
+                <div class="muted">Chargement de la session de révision.</div>
+            </article>
+            <article class="metric-card surface">
+                <div class="metric-label">Cartes apprises</div>
+                <div class="metric-value">…</div>
+                <div class="muted">Préparation du deck.</div>
             </article>
         </div>
     `;
@@ -55,6 +80,14 @@ function renderEmptyState() {
 }
 
 function renderCard(card) {
+    const nextIntervals = card.nextIntervals || {};
+    const intervals = {
+        wrong: "revoit tout de suite",
+        hard: formatDaysLabel(nextIntervals.hard ?? 1),
+        medium: formatDaysLabel(nextIntervals.medium ?? 2),
+        easy: formatDaysLabel(nextIntervals.easy ?? 4),
+    };
+
     return `
         <section class="review-stage">
             <article class="review-card surface flashcard" id="flashcard">
@@ -76,11 +109,10 @@ function renderCard(card) {
                 </div>
             </article>
             <div class="control-row">
-                <button class="btn btn-secondary" id="flip-btn">Retourner</button>
-                <button class="btn btn-danger" data-rating="wrong">Oublié</button>
-                <button class="btn btn-secondary" data-rating="hard">Difficile</button>
-                <button class="btn btn-primary" data-rating="medium">Correct</button>
-                <button class="btn btn-success" data-rating="easy">Facile</button>
+                <button class="btn btn-danger review-btn" data-rating="wrong"><span>Je ne sais pas</span><small>${intervals.wrong}</small></button>
+                <button class="btn btn-secondary review-btn" data-rating="hard"><span>Difficile</span><small>${intervals.hard}</small></button>
+                <button class="btn btn-primary review-btn" data-rating="medium"><span>Moyen</span><small>${intervals.medium}</small></button>
+                <button class="btn btn-success review-btn" data-rating="easy"><span>Facile</span><small>${intervals.easy}</small></button>
             </div>
         </section>
     `;
@@ -102,12 +134,10 @@ async function bootReview() {
     const root = document.getElementById('review-root');
 
     try {
-        const summary = await loadSummary();
         const title = reviewModuleId ? 'Cartes dues du module' : 'Cartes dues du deck';
-        root.innerHTML = summaryMarkup(summary, title);
-
-        const card = await loadNextCard();
-        root.insertAdjacentHTML('beforeend', card ? renderCard(card) : renderEmptyState());
+        root.innerHTML = loadingMarkup(title);
+        const [summary, card] = await Promise.all([loadSummary(), loadNextCard()]);
+        root.innerHTML = (card ? renderCard(card) : renderEmptyState()) + summaryMarkup(summary, title);
 
         root.addEventListener('click', async (event) => {
             const target = event.target;
@@ -115,7 +145,7 @@ async function bootReview() {
                 return;
             }
 
-            if (target.id === 'flip-btn' || target.closest('#flashcard')) {
+            if (target.closest('#flashcard')) {
                 document.getElementById('flashcard')?.classList.toggle('is-flipped');
                 return;
             }
@@ -126,9 +156,8 @@ async function bootReview() {
             }
 
             await submitReview(rating);
-            const nextSummary = await loadSummary();
-            const nextCard = await loadNextCard();
-            root.innerHTML = summaryMarkup(nextSummary, title) + (nextCard ? renderCard(nextCard) : renderEmptyState());
+            const [nextSummary, nextCard] = await Promise.all([loadSummary(), loadNextCard()]);
+            root.innerHTML = (nextCard ? renderCard(nextCard) : renderEmptyState()) + summaryMarkup(nextSummary, title);
         });
     } catch (error) {
         root.innerHTML = `<article class="empty-card surface"><h2>Erreur</h2><p class="muted">${error.message}</p></article>`;

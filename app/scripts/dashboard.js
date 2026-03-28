@@ -3,7 +3,7 @@ function metricCard(label, value, note = '') {
         <article class="metric-card surface">
             <div class="metric-label">${label}</div>
             <div class="metric-value">${value}</div>
-            <div class="muted">${note}</div>
+            ${note ? `<div class="muted">${note}</div>` : ''}
         </article>
     `;
 }
@@ -11,7 +11,7 @@ function metricCard(label, value, note = '') {
 function moduleCard(module) {
     const action = module.status === 'active'
         ? `<a class="btn btn-primary" href="module.html?id=${module.id}">Ouvrir le module</a>`
-        : `<span class="btn btn-secondary">Bientôt</span>`;
+        : `<span class="module-note">Module en préparation</span>`;
 
     return `
         <article class="module-card surface">
@@ -26,7 +26,7 @@ function moduleCard(module) {
                 <div>Exactitude : ${formatPercent(module.exerciseMetrics.accuracyRate)}</div>
                 <div>Cartes dues : ${module.reviewMetrics.dueCards}</div>
             </div>
-            <div class="actions">
+            <div class="actions module-actions">
                 ${action}
             </div>
         </article>
@@ -46,18 +46,22 @@ function weakSpotCard(item) {
 
 async function bootDashboard() {
     const root = document.getElementById('dashboard-root');
+    const topbar = document.getElementById('dashboard-topbar');
     try {
         const data = await apiGet('/api/dashboard');
         const resumeHref = data.resumeModuleId ? `module.html?id=${data.resumeModuleId}` : 'review.html';
+        if (topbar) {
+            topbar.classList.add('is-hidden');
+        }
 
         root.innerHTML = `
             <section class="hero">
                 <article class="hero-card surface">
                     <span class="eyebrow">Étude modulaire</span>
-                    <h1>Physique-Chimie, reconstruite autour des modules.</h1>
+                    <h1>Un espace simple pour apprendre, fixer et réviser.</h1>
                     <p class="hero-copy">
-                        Sif organise le programme de 2nde par thèmes, lie chaque carte au bon sujet
-                        et sépare clairement compréhension, activité et mémoire à long terme.
+                        Chaque thème avance par leçons, exercices et cartes de révision.
+                        Le deck reste unique, mais le suivi reste lisible par module.
                     </p>
                     <div class="actions">
                         <a class="btn btn-primary" href="${resumeHref}">Reprendre</a>
@@ -66,7 +70,7 @@ async function bootDashboard() {
                 </article>
                 <article class="hero-card surface">
                     <span class="eyebrow">Deck global</span>
-                    <div class="stack">
+                    <div class="stack module-actions">
                         <div>
                             <div class="metric-label">Cartes dues</div>
                             <div class="metric-value">${data.review.dueCards}</div>
@@ -78,10 +82,10 @@ async function bootDashboard() {
             </section>
 
             <section class="grid-metrics">
-                ${metricCard('Modules actifs', data.modules.filter((module) => module.status === 'active').length, 'Le premier thème est déjà câblé.')}
-                ${metricCard('Exercices tentés', data.modules.reduce((sum, module) => sum + module.exerciseMetrics.totalAttempts, 0), 'Événements stockés dans SQLite.')}
-                ${metricCard('Cartes dans le deck', data.review.totalCards, 'Deck unique pour tout le programme.')}
-                ${metricCard('Erreur récente', formatPercent(data.review.recentErrorRate), 'Basé sur les 14 derniers jours de révision.')}
+                ${metricCard('Modules actifs', data.modules.filter((module) => module.status === 'active').length)}
+                ${metricCard('Exercices tentés', data.modules.reduce((sum, module) => sum + module.exerciseMetrics.totalAttempts, 0))}
+                ${metricCard('Cartes dans le deck', data.review.totalCards)}
+                ${metricCard('Erreur récente', formatPercent(data.review.recentErrorRate))}
             </section>
 
             <section>
@@ -99,12 +103,12 @@ async function bootDashboard() {
             <section>
                 <div class="section-head">
                     <div>
-                        <h2>Points faibles actuels</h2>
-                        <p class="muted">Pas de score opaque : juste les exercices réellement fragiles.</p>
+                        <h2>Exercices à retravailler</h2>
+                        <p class="muted">Cette zone mettra en avant les questions qui résistent vraiment, module par module.</p>
                     </div>
                 </div>
                 <div class="grid-modules">
-                    ${data.weakSpots.length ? data.weakSpots.map(weakSpotCard).join('') : `<article class="empty-card surface"><h3>Encore rien à signaler</h3><p class="muted">Les points faibles apparaîtront après les premières tentatives.</p></article>`}
+                    ${data.weakSpots.length ? data.weakSpots.map(weakSpotCard).join('') : `<article class="empty-card surface"><h3>Rien de fragile pour l'instant</h3><p class="soft-note">Après quelques exercices, cette zone servira à repérer ce qu'il faut reprendre sans mélanger cela avec les cartes de révision.</p></article>`}
                 </div>
             </section>
         `;

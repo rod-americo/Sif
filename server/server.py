@@ -15,6 +15,7 @@ CONTENT_ROOT = REPO_ROOT / "content"
 DATA_ROOT = REPO_ROOT / "data"
 DB_PATH = DATA_ROOT / "app.db"
 SECONDS_PER_DAY = 86400
+ACTIVE_USER_ID = os.environ.get("SIF_ACTIVE_USER_ID", "default-user")
 
 
 def now_ts() -> int:
@@ -43,22 +44,37 @@ def initialize_db():
             """
             PRAGMA foreign_keys = ON;
 
+            CREATE TABLE IF NOT EXISTS users (
+                id TEXT PRIMARY KEY,
+                display_name TEXT NOT NULL
+            );
+
             CREATE TABLE IF NOT EXISTS cards (
                 id TEXT PRIMARY KEY,
                 prompt TEXT NOT NULL,
                 answer TEXT NOT NULL,
                 module_ids TEXT NOT NULL,
                 lesson_ids TEXT NOT NULL,
-                tags TEXT NOT NULL,
+                tags TEXT NOT NULL
+            );
+
+            CREATE TABLE IF NOT EXISTS user_cards (
+                user_id TEXT NOT NULL,
+                card_id TEXT NOT NULL,
                 interval_days INTEGER NOT NULL DEFAULT 0,
                 due_at INTEGER NOT NULL DEFAULT 0,
+                ease_factor REAL NOT NULL DEFAULT 2.3,
                 review_count INTEGER NOT NULL DEFAULT 0,
                 lapse_count INTEGER NOT NULL DEFAULT 0,
-                last_reviewed_at INTEGER
+                last_reviewed_at INTEGER,
+                PRIMARY KEY (user_id, card_id),
+                FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE,
+                FOREIGN KEY(card_id) REFERENCES cards(id) ON DELETE CASCADE
             );
 
             CREATE TABLE IF NOT EXISTS review_events (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
+                user_id TEXT NOT NULL,
                 card_id TEXT NOT NULL,
                 rating TEXT NOT NULL,
                 interval_before INTEGER NOT NULL,
@@ -66,11 +82,13 @@ def initialize_db():
                 due_before INTEGER NOT NULL,
                 due_after INTEGER NOT NULL,
                 reviewed_at INTEGER NOT NULL,
-                FOREIGN KEY(card_id) REFERENCES cards(id)
+                FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE,
+                FOREIGN KEY(card_id) REFERENCES cards(id) ON DELETE CASCADE
             );
 
             CREATE TABLE IF NOT EXISTS exercise_attempts (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
+                user_id TEXT NOT NULL,
                 exercise_id TEXT NOT NULL,
                 module_id TEXT NOT NULL,
                 lesson_id TEXT NOT NULL,
@@ -78,24 +96,34 @@ def initialize_db():
                 answered INTEGER NOT NULL,
                 selected_index INTEGER,
                 correct_index INTEGER NOT NULL,
-                attempted_at INTEGER NOT NULL
+                attempted_at INTEGER NOT NULL,
+                FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE
             );
             """
+        )
+        conn.execute(
+            """
+            INSERT INTO users (id, display_name)
+            VALUES (?, ?)
+            ON CONFLICT(id) DO UPDATE SET display_name = excluded.display_name
+            """,
+            (ACTIVE_USER_ID, "Student"),
         )
 
 
 def sync_cards():
     module_dir = CONTENT_ROOT / "modules"
+    content_card_ids = set()
     with get_db() as conn:
         for cards_path in module_dir.glob("*/cards.json"):
             for card in load_json(cards_path):
+                content_card_ids.add(card["id"])
                 conn.execute(
                     """
                     INSERT INTO cards (
-                        id, prompt, answer, module_ids, lesson_ids, tags,
-                        interval_days, due_at, review_count, lapse_count, last_reviewed_at
+                        id, prompt, answer, module_ids, lesson_ids, tags
                     )
-                    VALUES (?, ?, ?, ?, ?, ?, 0, 0, 0, 0, NULL)
+                    VALUES (?, ?, ?, ?, ?, ?)
                     ON CONFLICT(id) DO UPDATE SET
                         prompt = excluded.prompt,
                         answer = excluded.answer,
@@ -112,6 +140,37 @@ def sync_cards():
                         normalize_text_list(card.get("tags", [])),
                     ),
                 )
+        card_ids = [row["id"] for row in conn.execute("SELECT id FROM cards").fetchall()]
+        for card_id in card_ids:
+            conn.execute(
+                """
+                INSERT INTO user_cards (
+                    user_id, card_id, interval_days, due_at, ease_factor,
+                    review_count, lapse_count, last_reviewed_at
+                )
+                VALUES (?, ?, 0, 0, 2.3, 0, 0, NULL)
+                ON CONFLICT(user_id, card_id) DO NOTHING
+                """,
+                (ACTIVE_USER_ID, card_id),
+            )
+        if content_card_ids:
+            placeholders = ", ".join("?" for _ in content_card_ids)
+            conn.execute(
+                f"DELETE FROM review_events WHERE card_id NOT IN ({placeholders})",
+                tuple(sorted(content_card_ids)),
+            )
+            conn.execute(
+                f"DELETE FROM user_cards WHERE card_id NOT IN ({placeholders})",
+                tuple(sorted(content_card_ids)),
+            )
+            conn.execute(
+                f"DELETE FROM cards WHERE id NOT IN ({placeholders})",
+                tuple(sorted(content_card_ids)),
+            )
+        else:
+            conn.execute("DELETE FROM review_events")
+            conn.execute("DELETE FROM user_cards")
+            conn.execute("DELETE FROM cards")
 
 
 def load_curriculum():
@@ -145,7 +204,16 @@ def load_module(module_id: str):
 
 
 def get_review_summary(conn, module_id=None):
-    cards = conn.execute("SELECT * FROM cards").fetchall()
+    cards = conn.execute(
+        """
+        SELECT c.*, uc.interval_days, uc.due_at, uc.ease_factor, uc.review_count,
+               uc.lapse_count, uc.last_reviewed_at
+        FROM cards c
+        JOIN user_cards uc ON uc.card_id = c.id
+        WHERE uc.user_id = ?
+        """,
+        (ACTIVE_USER_ID,),
+    ).fetchall()
     current = now_ts()
     rows = []
     for row in cards:
@@ -168,10 +236,10 @@ def get_review_summary(conn, module_id=None):
             SELECT re.*, c.module_ids
             FROM review_events re
             JOIN cards c ON c.id = re.card_id
-            WHERE re.reviewed_at >= ?
+            WHERE re.user_id = ? AND re.reviewed_at >= ?
             ORDER BY re.reviewed_at DESC
             """,
-            (recent_window,),
+            (ACTIVE_USER_ID, recent_window),
         ).fetchall()
         if not module_id or module_id in set(json.loads(event["module_ids"]))
     ]
@@ -196,10 +264,10 @@ def get_module_exercise_metrics(conn, module_id: str):
         """
         SELECT *
         FROM exercise_attempts
-        WHERE module_id = ?
+        WHERE user_id = ? AND module_id = ?
         ORDER BY attempted_at DESC
         """,
-        (module_id,),
+        (ACTIVE_USER_ID, module_id),
     ).fetchall()
 
     total = len(attempts)
@@ -311,7 +379,16 @@ def get_dashboard():
 
 def get_due_card(conn, module_id=None):
     current = now_ts()
-    rows = conn.execute("SELECT * FROM cards ORDER BY due_at ASC, review_count ASC, id ASC").fetchall()
+    rows = conn.execute(
+        """
+        SELECT c.*, uc.interval_days, uc.ease_factor, uc.review_count, uc.due_at
+        FROM cards c
+        JOIN user_cards uc ON uc.card_id = c.id
+        WHERE uc.user_id = ?
+        ORDER BY uc.due_at ASC, uc.review_count ASC, c.id ASC
+        """,
+        (ACTIVE_USER_ID,),
+    ).fetchall()
     for row in rows:
         if row["due_at"] > current:
             continue
@@ -326,21 +403,37 @@ def get_due_card(conn, module_id=None):
             "lessonIds": json.loads(row["lesson_ids"]),
             "tags": json.loads(row["tags"]),
             "intervalDays": row["interval_days"],
+            "easeFactor": row["ease_factor"],
             "reviewCount": row["review_count"],
             "dueAt": row["due_at"],
+            "nextIntervals": build_next_intervals(row["interval_days"], row["ease_factor"]),
         }
     return None
 
 
-def compute_next_interval(current_interval: int, rating: str) -> int:
+def clamp(value: float, minimum: float, maximum: float) -> float:
+    return max(minimum, min(maximum, value))
+
+
+def build_next_intervals(current_interval: int, ease_factor: float) -> dict[str, int]:
+    return {
+        rating: compute_review_update(current_interval, ease_factor, rating)[0]
+        for rating in ("wrong", "hard", "medium", "easy")
+    }
+
+
+def compute_review_update(current_interval: int, ease_factor: float, rating: str) -> tuple[int, float]:
     if rating == "wrong":
-        return 0
+        return 0, clamp(ease_factor - 0.2, 1.3, 3.0)
     if rating == "hard":
-        return max(1, current_interval + 1)
+        next_interval = 1 if current_interval == 0 else max(1, round(current_interval * 1.2))
+        return next_interval, clamp(ease_factor - 0.05, 1.3, 3.0)
     if rating == "medium":
-        return 2 if current_interval == 0 else current_interval * 2
+        next_interval = 2 if current_interval == 0 else max(2, round(current_interval * ease_factor))
+        return next_interval, ease_factor
     if rating == "easy":
-        return 4 if current_interval == 0 else current_interval * 3
+        next_interval = 4 if current_interval == 0 else max(4, round(current_interval * (ease_factor + 0.2)))
+        return next_interval, clamp(ease_factor + 0.03, 1.3, 3.0)
     raise ValueError("Unsupported rating")
 
 
@@ -348,10 +441,16 @@ class AppHandler(SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=str(APP_ROOT), **kwargs)
 
+    def address_string(self):
+        return self.client_address[0]
+
     def end_headers(self):
         self.send_header("Access-Control-Allow-Origin", "*")
         self.send_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
         self.send_header("Access-Control-Allow-Headers", "Content-Type")
+        self.send_header("Cache-Control", "no-store, no-cache, must-revalidate, max-age=0")
+        self.send_header("Pragma", "no-cache")
+        self.send_header("Expires", "0")
         super().end_headers()
 
     def do_OPTIONS(self):
@@ -432,12 +531,13 @@ class AppHandler(SimpleHTTPRequestHandler):
                 conn.execute(
                     """
                     INSERT INTO exercise_attempts (
-                        exercise_id, module_id, lesson_id, is_correct, answered,
+                        user_id, exercise_id, module_id, lesson_id, is_correct, answered,
                         selected_index, correct_index, attempted_at
                     )
-                    VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
                     """,
                     (
+                        ACTIVE_USER_ID,
                         payload["exerciseId"],
                         payload["moduleId"],
                         payload["lessonId"],
@@ -458,34 +558,44 @@ class AppHandler(SimpleHTTPRequestHandler):
             payload = self.read_json_body()
             reviewed_at = int(payload.get("reviewedAt") or now_ts())
             with get_db() as conn:
-                row = conn.execute("SELECT * FROM cards WHERE id = ?", (payload["cardId"],)).fetchone()
+                row = conn.execute(
+                    """
+                    SELECT c.id, uc.interval_days, uc.ease_factor, uc.due_at, uc.lapse_count
+                    FROM cards c
+                    JOIN user_cards uc ON uc.card_id = c.id
+                    WHERE c.id = ? AND uc.user_id = ?
+                    """,
+                    (payload["cardId"], ACTIVE_USER_ID),
+                ).fetchone()
                 if not row:
                     raise ValueError("Card not found")
 
                 interval_before = int(row["interval_days"])
+                ease_before = float(row["ease_factor"] or 2.3)
                 due_before = int(row["due_at"])
-                interval_after = compute_next_interval(interval_before, payload["rating"])
+                interval_after, ease_after = compute_review_update(interval_before, ease_before, payload["rating"])
                 due_after = reviewed_at + (interval_after * SECONDS_PER_DAY)
                 lapse_count = row["lapse_count"] + (1 if payload["rating"] == "wrong" else 0)
 
                 conn.execute(
                     """
-                    UPDATE cards
-                    SET interval_days = ?, due_at = ?, review_count = review_count + 1,
+                    UPDATE user_cards
+                    SET interval_days = ?, due_at = ?, ease_factor = ?, review_count = review_count + 1,
                         lapse_count = ?, last_reviewed_at = ?
-                    WHERE id = ?
+                    WHERE user_id = ? AND card_id = ?
                     """,
-                    (interval_after, due_after, lapse_count, reviewed_at, payload["cardId"]),
+                    (interval_after, due_after, ease_after, lapse_count, reviewed_at, ACTIVE_USER_ID, payload["cardId"]),
                 )
                 conn.execute(
                     """
                     INSERT INTO review_events (
-                        card_id, rating, interval_before, interval_after,
+                        user_id, card_id, rating, interval_before, interval_after,
                         due_before, due_after, reviewed_at
                     )
-                    VALUES (?, ?, ?, ?, ?, ?, ?)
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?)
                     """,
                     (
+                        ACTIVE_USER_ID,
                         payload["cardId"],
                         payload["rating"],
                         interval_before,
