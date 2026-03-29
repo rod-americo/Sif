@@ -1,0 +1,562 @@
+[
+  {
+    "id": "os_ex_01",
+    "moduleId": "ondes-signaux",
+    "lessonId": "emission-perception-son",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "Un son est émis lorsqu'un objet :",
+    "choices": [
+      "Change de couleur",
+      "Vibre",
+      "Devient lumineux",
+      "Se refroidit"
+    ],
+    "correctIndex": 1,
+    "explanation": "L'émission d'un son provient de la vibration d'une source qui met le milieu en vibration."
+  },
+  {
+    "id": "os_ex_02",
+    "moduleId": "ondes-signaux",
+    "lessonId": "emission-perception-son",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "Le son peut se propager :",
+    "choices": [
+      "Seulement dans l'air",
+      "Seulement dans l'eau",
+      "Dans un milieu matériel",
+      "Dans le vide plus vite que dans l'air"
+    ],
+    "correctIndex": 2,
+    "explanation": "Le son se propage dans les solides, les liquides ou les gaz, mais pas dans le vide."
+  },
+  {
+    "id": "os_ex_03",
+    "moduleId": "ondes-signaux",
+    "lessonId": "emission-perception-son",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "La fréquence d'un signal sonore correspond :",
+    "choices": [
+      "Au nombre de motifs par seconde",
+      "À la durée d'un motif",
+      "Au niveau sonore en décibels",
+      "À la vitesse du son"
+    ],
+    "correctIndex": 0,
+    "explanation": "La fréquence mesure combien de fois le motif périodique se répète en une seconde."
+  },
+  {
+    "id": "os_ex_04",
+    "moduleId": "ondes-signaux",
+    "lessonId": "emission-perception-son",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "Si la période d'un son périodique diminue, sa fréquence :",
+    "choices": [
+      "Diminue aussi",
+      "Augmente",
+      "Reste nulle",
+      "Devient égale à son intensité"
+    ],
+    "correctIndex": 1,
+    "explanation": "Comme `f = 1 / T`, une période plus petite correspond à une fréquence plus grande."
+  },
+  {
+    "id": "os_ex_05",
+    "moduleId": "ondes-signaux",
+    "lessonId": "emission-perception-son",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "Deux sons ont la même fréquence mais ne se ressemblent pas à l'écoute. La différence vient surtout du :",
+    "choices": [
+      "Timbre",
+      "Référentiel",
+      "Milieu matériel",
+      "Poids"
+    ],
+    "correctIndex": 0,
+    "explanation": "Le timbre permet de distinguer deux sons de même hauteur."
+  },
+  {
+    "id": "os_ex_06",
+    "moduleId": "ondes-signaux",
+    "lessonId": "emission-perception-son",
+    "type": "mcq",
+    "difficulty": "advanced",
+    "prompt": "Pourquoi un astronaute ne peut-il pas entendre directement une explosion dans l'espace sans équipement ?",
+    "choices": [
+      "Parce que la lumière va trop vite",
+      "Parce qu'il n'y a pas de milieu matériel pour propager le son",
+      "Parce que le son est absorbé par les étoiles",
+      "Parce que l'intensité sonore y est toujours nulle"
+    ],
+    "correctIndex": 1,
+    "explanation": "Le son nécessite un milieu matériel, ce qui n'est pas le cas du vide spatial."
+  },
+  {
+    "id": "os_ex_07",
+    "moduleId": "ondes-signaux",
+    "lessonId": "emission-perception-son",
+    "type": "mcq",
+    "difficulty": "advanced",
+    "prompt": "Quelle grandeur est directement liée à la perception d'un son plus aigu ?",
+    "choices": [
+      "Une fréquence plus grande",
+      "Une intensité plus grande",
+      "Une vitesse de propagation plus grande",
+      "Une période plus grande"
+    ],
+    "correctIndex": 0,
+    "explanation": "La hauteur d'un son dépend de sa fréquence : plus elle est grande, plus le son est aigu."
+  },
+  {
+    "id": "os_ex_08",
+    "moduleId": "ondes-signaux",
+    "lessonId": "reflexion-refraction-lumiere",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "Dans un milieu homogène et transparent, la lumière se propage :",
+    "choices": [
+      "En ligne droite",
+      "Toujours en cercle",
+      "Comme un son dans le vide",
+      "Seulement vers le haut"
+    ],
+    "correctIndex": 0,
+    "explanation": "Le modèle usuel est celui d'une propagation rectiligne dans un milieu homogène et transparent."
+  },
+  {
+    "id": "os_ex_09",
+    "moduleId": "ondes-signaux",
+    "lessonId": "reflexion-refraction-lumiere",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "Pour mesurer un angle d'incidence, on se repère par rapport :",
+    "choices": [
+      "À la surface",
+      "À la normale",
+      "Au rayon réfléchi seulement",
+      "À l'horizontale"
+    ],
+    "correctIndex": 1,
+    "explanation": "Les angles de réflexion et de réfraction se mesurent par rapport à la normale à la surface."
+  },
+  {
+    "id": "os_ex_10",
+    "moduleId": "ondes-signaux",
+    "lessonId": "reflexion-refraction-lumiere",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "Lors d'une réflexion, l'angle réfléchi est :",
+    "choices": [
+      "Toujours nul",
+      "Égal à l'angle d'incidence",
+      "Toujours plus grand que l'angle d'incidence",
+      "Mesuré par rapport à la surface"
+    ],
+    "correctIndex": 1,
+    "explanation": "La loi de la réflexion indique l'égalité entre angle d'incidence et angle réfléchi."
+  },
+  {
+    "id": "os_ex_11",
+    "moduleId": "ondes-signaux",
+    "lessonId": "reflexion-refraction-lumiere",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "Un rayon lumineux passe de l'air vers l'eau. Il se rapproche de la normale. Ce phénomène est :",
+    "choices": [
+      "Une dispersion",
+      "Une réfraction",
+      "Une émission",
+      "Une diffraction"
+    ],
+    "correctIndex": 1,
+    "explanation": "À l'interface entre deux milieux transparents, le changement de direction correspond à une réfraction."
+  },
+  {
+    "id": "os_ex_12",
+    "moduleId": "ondes-signaux",
+    "lessonId": "reflexion-refraction-lumiere",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "Une image de paille semblant cassée dans l'eau illustre surtout :",
+    "choices": [
+      "La réflexion totale",
+      "La réfraction de la lumière",
+      "La propagation du son",
+      "La loi d'Ohm"
+    ],
+    "correctIndex": 1,
+    "explanation": "La déviation des rayons entre l'eau et l'air modifie la position apparente de la paille."
+  },
+  {
+    "id": "os_ex_13",
+    "moduleId": "ondes-signaux",
+    "lessonId": "reflexion-refraction-lumiere",
+    "type": "mcq",
+    "difficulty": "advanced",
+    "prompt": "Quelle erreur conduit le plus souvent à appliquer faussement les lois de Snell-Descartes ?",
+    "choices": [
+      "Utiliser une source lumineuse",
+      "Mesurer les angles par rapport à la surface",
+      "Tracer la normale",
+      "Nommer le rayon incident"
+    ],
+    "correctIndex": 1,
+    "explanation": "Les angles se mesurent par rapport à la normale, pas par rapport à la surface."
+  },
+  {
+    "id": "os_ex_14",
+    "moduleId": "ondes-signaux",
+    "lessonId": "reflexion-refraction-lumiere",
+    "type": "mcq",
+    "difficulty": "advanced",
+    "prompt": "Le rayon réfléchi et le rayon réfracté ont en commun de :",
+    "choices": [
+      "Rester forcément dans le même milieu que le rayon incident",
+      "Être tous deux perpendiculaires à la surface",
+      "Appartenir au plan défini avec la normale et le rayon incident",
+      "Avoir toujours le même angle"
+    ],
+    "correctIndex": 2,
+    "explanation": "Les lois de Snell-Descartes imposent la coplanarité du rayon incident, de la normale et des rayons réfléchi ou réfracté."
+  },
+  {
+    "id": "os_ex_15",
+    "moduleId": "ondes-signaux",
+    "lessonId": "dispersion-lumiere",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "Une lumière monochromatique est une lumière :",
+    "choices": [
+      "Composée d'une seule radiation",
+      "Toujours blanche",
+      "Invisible",
+      "Toujours très intense"
+    ],
+    "correctIndex": 0,
+    "explanation": "Monochromatique signifie qu'une seule longueur d'onde caractérise la lumière."
+  },
+  {
+    "id": "os_ex_16",
+    "moduleId": "ondes-signaux",
+    "lessonId": "dispersion-lumiere",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "La lumière blanche est :",
+    "choices": [
+      "Monochromatique",
+      "Polychromatique",
+      "Toujours un spectre de raies",
+      "Une onde sonore"
+    ],
+    "correctIndex": 1,
+    "explanation": "La lumière blanche contient plusieurs radiations de longueurs d'onde différentes."
+  },
+  {
+    "id": "os_ex_17",
+    "moduleId": "ondes-signaux",
+    "lessonId": "dispersion-lumiere",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "Un spectre de raies d'émission est constitué :",
+    "choices": [
+      "D'une seule zone noire",
+      "De quelques raies colorées séparées",
+      "D'un dégradé continu uniquement",
+      "De tensions électriques"
+    ],
+    "correctIndex": 1,
+    "explanation": "Un spectre de raies montre des radiations discrètes émises par certaines sources."
+  },
+  {
+    "id": "os_ex_18",
+    "moduleId": "ondes-signaux",
+    "lessonId": "dispersion-lumiere",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "Dans un prisme, la lumière blanche se décompose parce que :",
+    "choices": [
+      "Chaque couleur se propage à l'identique",
+      "Le prisme fabrique de nouvelles couleurs",
+      "L'indice du prisme dépend de la longueur d'onde",
+      "La lumière cesse d'être rectiligne dans l'air"
+    ],
+    "correctIndex": 2,
+    "explanation": "Les radiations ne sont pas déviées de la même façon, ce qui provoque la dispersion."
+  },
+  {
+    "id": "os_ex_19",
+    "moduleId": "ondes-signaux",
+    "lessonId": "dispersion-lumiere",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "Quel énoncé décrit correctement un spectre continu ?",
+    "choices": [
+      "Il contient seulement du rouge et du violet",
+      "Il présente une suite ininterrompue de couleurs",
+      "Il ne peut pas être observé avec la lumière blanche",
+      "Il est propre aux signaux électriques"
+    ],
+    "correctIndex": 1,
+    "explanation": "Un spectre continu ne comporte pas de coupure nette entre les couleurs."
+  },
+  {
+    "id": "os_ex_20",
+    "moduleId": "ondes-signaux",
+    "lessonId": "dispersion-lumiere",
+    "type": "mcq",
+    "difficulty": "advanced",
+    "prompt": "Dire qu'un prisme disperse la lumière revient à dire qu'il :",
+    "choices": [
+      "Absorbe toutes les radiations",
+      "Dévie différemment les radiations selon leur longueur d'onde",
+      "Transforme la lumière en son",
+      "Mesure l'intensité électrique"
+    ],
+    "correctIndex": 1,
+    "explanation": "La dispersion correspond à une déviation différente selon la radiation."
+  },
+  {
+    "id": "os_ex_21",
+    "moduleId": "ondes-signaux",
+    "lessonId": "dispersion-lumiere",
+    "type": "mcq",
+    "difficulty": "advanced",
+    "prompt": "Pourquoi est-il faux de dire qu'un prisme crée les couleurs d'un arc-en-ciel ?",
+    "choices": [
+      "Parce qu'il ne laisse passer que le vert",
+      "Parce que les radiations étaient déjà présentes dans la lumière blanche",
+      "Parce qu'il ne fonctionne que dans le vide",
+      "Parce qu'il agit comme un capteur"
+    ],
+    "correctIndex": 1,
+    "explanation": "Le prisme sépare des radiations déjà contenues dans la lumière incidente."
+  },
+  {
+    "id": "os_ex_22",
+    "moduleId": "ondes-signaux",
+    "lessonId": "vision-image",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "Une lentille mince convergente est généralement :",
+    "choices": [
+      "Plus épaisse au centre qu'aux bords",
+      "Plus épaisse aux bords qu'au centre",
+      "Toujours plate",
+      "Toujours opaque"
+    ],
+    "correctIndex": 0,
+    "explanation": "Une lentille convergente possède une forme plus épaisse au centre."
+  },
+  {
+    "id": "os_ex_23",
+    "moduleId": "ondes-signaux",
+    "lessonId": "vision-image",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "Une image réelle formée par une lentille convergente peut être :",
+    "choices": [
+      "Recueillie sur un écran",
+      "Seulement imaginée",
+      "Toujours droite",
+      "Située dans l'objet"
+    ],
+    "correctIndex": 0,
+    "explanation": "Une image réelle correspond à une convergence effective de rayons et peut être projetée sur un écran."
+  },
+  {
+    "id": "os_ex_24",
+    "moduleId": "ondes-signaux",
+    "lessonId": "vision-image",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "Dans le modèle de l'œil, l'image nette se forme sur :",
+    "choices": [
+      "La cornée uniquement",
+      "La rétine",
+      "Le cristallin",
+      "L'iris"
+    ],
+    "correctIndex": 1,
+    "explanation": "La rétine joue le rôle d'écran récepteur dans le modèle simple de l'œil."
+  },
+  {
+    "id": "os_ex_25",
+    "moduleId": "ondes-signaux",
+    "lessonId": "vision-image",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "Le grandissement permet de comparer :",
+    "choices": [
+      "La couleur de l'image et celle de l'objet",
+      "La taille de l'image à celle de l'objet",
+      "La vitesse de la lumière et celle du son",
+      "La fréquence et la période"
+    ],
+    "correctIndex": 1,
+    "explanation": "Le grandissement relie la taille de l'image à celle de l'objet."
+  },
+  {
+    "id": "os_ex_26",
+    "moduleId": "ondes-signaux",
+    "lessonId": "vision-image",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "Quel élément de l'œil joue le rôle de lentille convergente ajustable dans le modèle simple ?",
+    "choices": [
+      "La pupille",
+      "Le cristallin",
+      "La rétine",
+      "Le nerf optique"
+    ],
+    "correctIndex": 1,
+    "explanation": "Le cristallin adapte sa vergence pour former une image nette sur la rétine."
+  },
+  {
+    "id": "os_ex_27",
+    "moduleId": "ondes-signaux",
+    "lessonId": "vision-image",
+    "type": "mcq",
+    "difficulty": "advanced",
+    "prompt": "Quelle affirmation est correcte à propos d'une image réelle formée par une lentille convergente ?",
+    "choices": [
+      "Elle est toujours droite et plus petite",
+      "Elle ne peut jamais être observée sur un écran",
+      "Elle peut être renversée par rapport à l'objet",
+      "Elle se forme toujours au foyer"
+    ],
+    "correctIndex": 2,
+    "explanation": "Une image réelle formée par une lentille convergente est souvent renversée."
+  },
+  {
+    "id": "os_ex_28",
+    "moduleId": "ondes-signaux",
+    "lessonId": "vision-image",
+    "type": "mcq",
+    "difficulty": "advanced",
+    "prompt": "Pourquoi la position de l'objet est-elle importante devant une lentille convergente ?",
+    "choices": [
+      "Parce qu'elle modifie la couleur de la lumière",
+      "Parce qu'elle détermine la position et la taille de l'image",
+      "Parce qu'elle change la valeur de la charge électrique",
+      "Parce qu'elle impose la loi d'Ohm"
+    ],
+    "correctIndex": 1,
+    "explanation": "La géométrie objet-lentille conditionne la position et les dimensions de l'image formée."
+  },
+  {
+    "id": "os_ex_29",
+    "moduleId": "ondes-signaux",
+    "lessonId": "signaux-capteurs",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "L'intensité du courant électrique se mesure en :",
+    "choices": [
+      "Volts",
+      "Ohms",
+      "Ampères",
+      "Décibels"
+    ],
+    "correctIndex": 2,
+    "explanation": "L'unité de l'intensité est l'ampère."
+  },
+  {
+    "id": "os_ex_30",
+    "moduleId": "ondes-signaux",
+    "lessonId": "signaux-capteurs",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "La tension électrique se mesure en :",
+    "choices": [
+      "Volts",
+      "Ampères",
+      "Hertz",
+      "Newtons"
+    ],
+    "correctIndex": 0,
+    "explanation": "L'unité de la tension est le volt."
+  },
+  {
+    "id": "os_ex_31",
+    "moduleId": "ondes-signaux",
+    "lessonId": "signaux-capteurs",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "Pour un conducteur ohmique, la relation correcte est :",
+    "choices": [
+      "U = R × I",
+      "R = U + I",
+      "I = U × R",
+      "U = I / R dans tous les cas"
+    ],
+    "correctIndex": 0,
+    "explanation": "La loi d'Ohm relie la tension, la résistance et l'intensité par `U = R × I`."
+  },
+  {
+    "id": "os_ex_32",
+    "moduleId": "ondes-signaux",
+    "lessonId": "signaux-capteurs",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "La caractéristique tension-intensité d'un conducteur ohmique est :",
+    "choices": [
+      "Une droite passant par l'origine",
+      "Toujours une courbe fermée",
+      "Un cercle",
+      "Impossible à représenter"
+    ],
+    "correctIndex": 0,
+    "explanation": "La proportionnalité entre U et I donne une droite passant par l'origine."
+  },
+  {
+    "id": "os_ex_33",
+    "moduleId": "ondes-signaux",
+    "lessonId": "signaux-capteurs",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "Le rôle principal d'un capteur électrique est de :",
+    "choices": [
+      "Créer de la lumière blanche",
+      "Transformer une grandeur physique en signal exploitable",
+      "Supprimer toute résistance",
+      "Augmenter automatiquement la tension du générateur"
+    ],
+    "correctIndex": 1,
+    "explanation": "Un capteur convertit une grandeur physique en grandeur électrique ou en signal exploitable."
+  },
+  {
+    "id": "os_ex_34",
+    "moduleId": "ondes-signaux",
+    "lessonId": "signaux-capteurs",
+    "type": "mcq",
+    "difficulty": "advanced",
+    "prompt": "Pourquoi une photorésistance peut-elle servir de capteur de lumière ?",
+    "choices": [
+      "Parce que sa résistance varie avec l'éclairement",
+      "Parce qu'elle produit toujours un son",
+      "Parce qu'elle ne laisse jamais passer de courant",
+      "Parce qu'elle garde une résistance strictement constante"
+    ],
+    "correctIndex": 0,
+    "explanation": "La grandeur électrique mesurée change quand la lumière reçue change."
+  },
+  {
+    "id": "os_ex_35",
+    "moduleId": "ondes-signaux",
+    "lessonId": "signaux-capteurs",
+    "type": "mcq",
+    "difficulty": "advanced",
+    "prompt": "Quelle affirmation distingue correctement tension et intensité ?",
+    "choices": [
+      "Ce sont deux noms pour la même grandeur",
+      "La tension caractérise une différence de potentiel, l'intensité un débit de charge",
+      "L'intensité se mesure en volts et la tension en ampères",
+      "La tension existe seulement dans les circuits sans dipôle"
+    ],
+    "correctIndex": 1,
+    "explanation": "La tension et l'intensité sont deux grandeurs distinctes, avec des significations et des unités différentes."
+  }
+]

@@ -1,0 +1,322 @@
+[
+  {
+    "id": "os_card_01",
+    "prompt": "Qu'est-ce qui produit un son à la source ?",
+    "answer": "La vibration d'un objet ou d'un système matériel.",
+    "moduleIds": ["ondes-signaux"],
+    "lessonIds": ["emission-perception-son"],
+    "tags": ["son", "emission"]
+  },
+  {
+    "id": "os_card_02",
+    "prompt": "Pourquoi le son ne se propage-t-il pas dans le vide ?",
+    "answer": "Parce qu'il a besoin d'un milieu matériel pour transmettre la vibration.",
+    "moduleIds": ["ondes-signaux"],
+    "lessonIds": ["emission-perception-son"],
+    "tags": ["son", "propagation"]
+  },
+  {
+    "id": "os_card_03",
+    "prompt": "Qu'appelle-t-on période d'un signal périodique ?",
+    "answer": "La durée d'un motif qui se répète.",
+    "moduleIds": ["ondes-signaux"],
+    "lessonIds": ["emission-perception-son"],
+    "tags": ["periode", "signal"]
+  },
+  {
+    "id": "os_card_04",
+    "prompt": "Quelle relation relie la fréquence et la période ?",
+    "answer": "La fréquence est l'inverse de la période : `f = 1 / T`.",
+    "moduleIds": ["ondes-signaux"],
+    "lessonIds": ["emission-perception-son"],
+    "tags": ["frequence", "formule"]
+  },
+  {
+    "id": "os_card_05",
+    "prompt": "De quoi dépend la hauteur d'un son ?",
+    "answer": "De sa fréquence.",
+    "moduleIds": ["ondes-signaux"],
+    "lessonIds": ["emission-perception-son"],
+    "tags": ["hauteur", "frequence"]
+  },
+  {
+    "id": "os_card_06",
+    "prompt": "Que permet de distinguer le timbre d'un son ?",
+    "answer": "Deux sons de même hauteur émis par des sources différentes.",
+    "moduleIds": ["ondes-signaux"],
+    "lessonIds": ["emission-perception-son"],
+    "tags": ["timbre", "perception"]
+  },
+  {
+    "id": "os_card_07",
+    "prompt": "Dans quelle unité lit-on le niveau d'intensité sonore ?",
+    "answer": "En décibels.",
+    "moduleIds": ["ondes-signaux"],
+    "lessonIds": ["emission-perception-son"],
+    "tags": ["decibel", "intensite-sonore"]
+  },
+  {
+    "id": "os_card_08",
+    "prompt": "Quel risque est associé à une exposition sonore trop importante ?",
+    "answer": "Une dégradation de l'audition.",
+    "moduleIds": ["ondes-signaux"],
+    "lessonIds": ["emission-perception-son"],
+    "tags": ["sante", "son"]
+  },
+  {
+    "id": "os_card_09",
+    "prompt": "Comment modélise-t-on la propagation de la lumière dans un milieu homogène et transparent ?",
+    "answer": "Par des rayons lumineux rectilignes.",
+    "moduleIds": ["ondes-signaux"],
+    "lessonIds": ["reflexion-refraction-lumiere"],
+    "tags": ["lumiere", "rayon"]
+  },
+  {
+    "id": "os_card_10",
+    "prompt": "Par rapport à quoi mesure-t-on les angles en optique géométrique à une interface ?",
+    "answer": "Par rapport à la normale à la surface.",
+    "moduleIds": ["ondes-signaux"],
+    "lessonIds": ["reflexion-refraction-lumiere"],
+    "tags": ["normale", "angles"]
+  },
+  {
+    "id": "os_card_11",
+    "prompt": "Que dit la loi de la réflexion sur les angles ?",
+    "answer": "L'angle de réflexion est égal à l'angle d'incidence.",
+    "moduleIds": ["ondes-signaux"],
+    "lessonIds": ["reflexion-refraction-lumiere"],
+    "tags": ["reflexion", "snell-descartes"]
+  },
+  {
+    "id": "os_card_12",
+    "prompt": "Qu'est-ce que la réfraction ?",
+    "answer": "Le changement de direction d'un rayon lumineux lorsqu'il traverse l'interface entre deux milieux transparents.",
+    "moduleIds": ["ondes-signaux"],
+    "lessonIds": ["reflexion-refraction-lumiere"],
+    "tags": ["refraction", "definition"]
+  },
+  {
+    "id": "os_card_13",
+    "prompt": "Que traduit l'indice optique d'un milieu ?",
+    "answer": "La façon dont la lumière s'y propage et s'y dévie par rapport à d'autres milieux.",
+    "moduleIds": ["ondes-signaux"],
+    "lessonIds": ["reflexion-refraction-lumiere"],
+    "tags": ["indice", "optique"]
+  },
+  {
+    "id": "os_card_14",
+    "prompt": "Comment se comporte le rayon réfracté quand la lumière entre dans un milieu plus réfringent ?",
+    "answer": "Il se rapproche de la normale.",
+    "moduleIds": ["ondes-signaux"],
+    "lessonIds": ["reflexion-refraction-lumiere"],
+    "tags": ["refraction", "normale"]
+  },
+  {
+    "id": "os_card_15",
+    "prompt": "Quel exemple courant illustre la réfraction ?",
+    "answer": "Une paille dans l'eau qui paraît brisée à la surface.",
+    "moduleIds": ["ondes-signaux"],
+    "lessonIds": ["reflexion-refraction-lumiere"],
+    "tags": ["refraction", "exemple"]
+  },
+  {
+    "id": "os_card_16",
+    "prompt": "Quelle erreur de méthode fausse souvent les mesures d'angle en réflexion-réfraction ?",
+    "answer": "Mesurer les angles par rapport à la surface au lieu de la normale.",
+    "moduleIds": ["ondes-signaux"],
+    "lessonIds": ["reflexion-refraction-lumiere"],
+    "tags": ["erreur", "mesure"]
+  },
+  {
+    "id": "os_card_17",
+    "prompt": "Qu'est-ce qu'une lumière monochromatique ?",
+    "answer": "Une lumière caractérisée par une seule longueur d'onde.",
+    "moduleIds": ["ondes-signaux"],
+    "lessonIds": ["dispersion-lumiere"],
+    "tags": ["monochromatique", "lumiere"]
+  },
+  {
+    "id": "os_card_18",
+    "prompt": "Pourquoi dit-on que la lumière blanche est polychromatique ?",
+    "answer": "Parce qu'elle contient plusieurs radiations de longueurs d'onde différentes.",
+    "moduleIds": ["ondes-signaux"],
+    "lessonIds": ["dispersion-lumiere"],
+    "tags": ["blanche", "polychromatique"]
+  },
+  {
+    "id": "os_card_19",
+    "prompt": "Qu'est-ce qu'un spectre continu ?",
+    "answer": "Un spectre formé d'une suite ininterrompue de couleurs.",
+    "moduleIds": ["ondes-signaux"],
+    "lessonIds": ["dispersion-lumiere"],
+    "tags": ["spectre", "continu"]
+  },
+  {
+    "id": "os_card_20",
+    "prompt": "Qu'est-ce qu'un spectre de raies d'émission ?",
+    "answer": "Un spectre constitué de raies colorées séparées correspondant à certaines radiations émises.",
+    "moduleIds": ["ondes-signaux"],
+    "lessonIds": ["dispersion-lumiere"],
+    "tags": ["spectre", "raies"]
+  },
+  {
+    "id": "os_card_21",
+    "prompt": "Pourquoi un prisme disperse-t-il la lumière blanche ?",
+    "answer": "Parce que son indice dépend de la longueur d'onde, donc chaque radiation est déviée différemment.",
+    "moduleIds": ["ondes-signaux"],
+    "lessonIds": ["dispersion-lumiere"],
+    "tags": ["prisme", "dispersion"]
+  },
+  {
+    "id": "os_card_22",
+    "prompt": "Dans un prisme usuel, quelles couleurs sont le plus déviées ?",
+    "answer": "Le violet et le bleu sont plus déviés que le rouge.",
+    "moduleIds": ["ondes-signaux"],
+    "lessonIds": ["dispersion-lumiere"],
+    "tags": ["couleurs", "deviation"]
+  },
+  {
+    "id": "os_card_23",
+    "prompt": "Le prisme crée-t-il les couleurs de la lumière blanche ?",
+    "answer": "Non, il sépare des radiations déjà présentes dans la lumière incidente.",
+    "moduleIds": ["ondes-signaux"],
+    "lessonIds": ["dispersion-lumiere"],
+    "tags": ["idee-fausse", "prisme"]
+  },
+  {
+    "id": "os_card_24",
+    "prompt": "Quel phénomène naturel illustre la dispersion de la lumière blanche ?",
+    "answer": "L'arc-en-ciel.",
+    "moduleIds": ["ondes-signaux"],
+    "lessonIds": ["dispersion-lumiere"],
+    "tags": ["arc-en-ciel", "dispersion"]
+  },
+  {
+    "id": "os_card_25",
+    "prompt": "Comment reconnaître simplement une lentille mince convergente ?",
+    "answer": "Elle est plus épaisse au centre qu'aux bords.",
+    "moduleIds": ["ondes-signaux"],
+    "lessonIds": ["vision-image"],
+    "tags": ["lentille", "convergente"]
+  },
+  {
+    "id": "os_card_26",
+    "prompt": "Que représente la distance focale d'une lentille convergente ?",
+    "answer": "La distance entre le centre optique et le foyer principal.",
+    "moduleIds": ["ondes-signaux"],
+    "lessonIds": ["vision-image"],
+    "tags": ["distance-focale", "foyer"]
+  },
+  {
+    "id": "os_card_27",
+    "prompt": "Qu'est-ce qu'une image réelle ?",
+    "answer": "Une image formée par convergence réelle des rayons lumineux et que l'on peut recueillir sur un écran.",
+    "moduleIds": ["ondes-signaux"],
+    "lessonIds": ["vision-image"],
+    "tags": ["image-reelle", "definition"]
+  },
+  {
+    "id": "os_card_28",
+    "prompt": "De quoi dépend la position de l'image formée par une lentille convergente ?",
+    "answer": "De la position de l'objet par rapport à la lentille.",
+    "moduleIds": ["ondes-signaux"],
+    "lessonIds": ["vision-image"],
+    "tags": ["image", "position"]
+  },
+  {
+    "id": "os_card_29",
+    "prompt": "Que compare le grandissement ?",
+    "answer": "La taille de l'image à celle de l'objet.",
+    "moduleIds": ["ondes-signaux"],
+    "lessonIds": ["vision-image"],
+    "tags": ["grandissement", "taille"]
+  },
+  {
+    "id": "os_card_30",
+    "prompt": "Quel élément de l'œil joue le rôle de lentille convergente ajustable ?",
+    "answer": "Le cristallin.",
+    "moduleIds": ["ondes-signaux"],
+    "lessonIds": ["vision-image"],
+    "tags": ["oeil", "cristallin"]
+  },
+  {
+    "id": "os_card_31",
+    "prompt": "Où se forme l'image nette dans l'œil ?",
+    "answer": "Sur la rétine.",
+    "moduleIds": ["ondes-signaux"],
+    "lessonIds": ["vision-image"],
+    "tags": ["oeil", "retine"]
+  },
+  {
+    "id": "os_card_32",
+    "prompt": "Une image réelle formée par une lentille convergente est-elle forcément droite ?",
+    "answer": "Non, elle peut être renversée.",
+    "moduleIds": ["ondes-signaux"],
+    "lessonIds": ["vision-image"],
+    "tags": ["image-reelle", "orientation"]
+  },
+  {
+    "id": "os_card_33",
+    "prompt": "Dans quelle unité mesure-t-on l'intensité du courant ?",
+    "answer": "En ampères.",
+    "moduleIds": ["ondes-signaux"],
+    "lessonIds": ["signaux-capteurs"],
+    "tags": ["intensite", "unite"]
+  },
+  {
+    "id": "os_card_34",
+    "prompt": "Dans quelle unité mesure-t-on la tension électrique ?",
+    "answer": "En volts.",
+    "moduleIds": ["ondes-signaux"],
+    "lessonIds": ["signaux-capteurs"],
+    "tags": ["tension", "unite"]
+  },
+  {
+    "id": "os_card_35",
+    "prompt": "Quelle relation donne la loi d'Ohm pour un conducteur ohmique ?",
+    "answer": "`U = R × I`.",
+    "moduleIds": ["ondes-signaux"],
+    "lessonIds": ["signaux-capteurs"],
+    "tags": ["loi-dohm", "formule"]
+  },
+  {
+    "id": "os_card_36",
+    "prompt": "Comment reconnaît-on la caractéristique tension-intensité d'un conducteur ohmique ?",
+    "answer": "C'est une droite passant par l'origine.",
+    "moduleIds": ["ondes-signaux"],
+    "lessonIds": ["signaux-capteurs"],
+    "tags": ["caracteristique", "ohmique"]
+  },
+  {
+    "id": "os_card_37",
+    "prompt": "Qu'est-ce qu'un dipôle ?",
+    "answer": "Un composant électrique qui possède deux bornes.",
+    "moduleIds": ["ondes-signaux"],
+    "lessonIds": ["signaux-capteurs"],
+    "tags": ["dipole", "definition"]
+  },
+  {
+    "id": "os_card_38",
+    "prompt": "Quel est le rôle général d'un capteur ?",
+    "answer": "Transformer une grandeur physique en signal exploitable.",
+    "moduleIds": ["ondes-signaux"],
+    "lessonIds": ["signaux-capteurs"],
+    "tags": ["capteur", "definition"]
+  },
+  {
+    "id": "os_card_39",
+    "prompt": "Pourquoi une photorésistance peut-elle servir de capteur de lumière ?",
+    "answer": "Parce que sa résistance varie avec l'éclairement reçu.",
+    "moduleIds": ["ondes-signaux"],
+    "lessonIds": ["signaux-capteurs"],
+    "tags": ["photoresistance", "capteur"]
+  },
+  {
+    "id": "os_card_40",
+    "prompt": "La loi d'Ohm s'applique-t-elle à tous les dipôles ?",
+    "answer": "Non, elle s'applique au modèle de conducteur ohmique, pas à tous les dipôles.",
+    "moduleIds": ["ondes-signaux"],
+    "lessonIds": ["signaux-capteurs"],
+    "tags": ["loi-dohm", "limites"]
+  }
+]

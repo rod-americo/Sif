@@ -1,0 +1,42 @@
+{
+  "id": "ondes-signaux",
+  "title": "Ondes et signaux",
+  "theme": "Thème 3",
+  "order": 3,
+  "status": "active",
+  "summary": "Étudier l'émission et la perception d'un son, la propagation de la lumière, la formation des images et le rôle des signaux électriques.",
+  "whyItMatters": "Ce module relie des phénomènes très concrets, comme entendre, voir et mesurer, à des modèles simples utiles dans tout le lycée.",
+  "objectives": [
+    "Décrire l'émission, la propagation et la perception d'un signal sonore.",
+    "Exploiter les modèles de propagation, réflexion, réfraction et dispersion de la lumière.",
+    "Comprendre la formation d'une image par une lentille mince convergente et le modèle de l'œil.",
+    "Utiliser les lois électriques de base et interpréter le rôle de dipôles et de capteurs."
+  ],
+  "chapters": [
+    {
+      "id": "emission-perception-son",
+      "title": "Émission et perception d'un son",
+      "lessonFile": "01-emission-et-perception-dun-son.md"
+    },
+    {
+      "id": "reflexion-refraction-lumiere",
+      "title": "Réflexion et réfraction de la lumière",
+      "lessonFile": "02-reflexion-et-refraction-de-la-lumiere.md"
+    },
+    {
+      "id": "dispersion-lumiere",
+      "title": "Dispersion de la lumière",
+      "lessonFile": "03-dispersion-de-la-lumiere.md"
+    },
+    {
+      "id": "vision-image",
+      "title": "Vision et image",
+      "lessonFile": "04-vision-et-image.md"
+    },
+    {
+      "id": "signaux-capteurs",
+      "title": "Signaux et capteurs",
+      "lessonFile": "05-signaux-et-capteurs.md"
+    }
+  ]
+}
