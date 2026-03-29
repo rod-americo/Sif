@@ -92,7 +92,6 @@ async function bootDashboard() {
                 <div class="section-head">
                     <div>
                         <h2>Modules</h2>
-                        <p class="muted">Le contenu suit le programme officiel et le manuel, avec une architecture prête pour les thèmes 2 et 3.</p>
                     </div>
                 </div>
                 <div class="grid-modules">
