@@ -63,6 +63,7 @@ Maintain and expand a personal study application for French `2nde` physics-chemi
 
 - `README.md`
 - `SKILL.md`
+- `CONTENT_GUIDE.md`
 - `content/curriculum.json`
 - `server/server.py`
 

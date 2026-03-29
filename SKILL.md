@@ -27,6 +27,7 @@ This repository contains a personal study app for French `2nde` physics-chemistr
 ## Main Files
 
 - `content/curriculum.json`
+- `CONTENT_GUIDE.md`
 - `content/modules/*`
 - `server/server.py`
 - `app/index.html`
