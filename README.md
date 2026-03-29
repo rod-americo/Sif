@@ -37,13 +37,13 @@ Metrics are intentionally separated:
 
 ## Current Scope
 
-The first fully wired module is:
+Fully wired modules:
 
 - `constitution-transformations`
-
-The curriculum scaffold already includes:
-
 - `mouvement-interactions`
+
+The curriculum scaffold also includes:
+
 - `ondes-signaux`
 
 ## Run

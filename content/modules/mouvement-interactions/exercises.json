@@ -1,0 +1,338 @@
+[
+  {
+    "id": "mi_ex_01",
+    "moduleId": "mouvement-interactions",
+    "lessonId": "decrire-un-mouvement",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "Pour décrire correctement le mouvement d'un système, il faut d'abord préciser :",
+    "choices": [
+      "Sa masse volumique",
+      "Le référentiel choisi",
+      "Sa composition chimique",
+      "Sa température"
+    ],
+    "correctIndex": 1,
+    "explanation": "La description d'un mouvement n'a de sens qu'après choix d'un référentiel."
+  },
+  {
+    "id": "mi_ex_02",
+    "moduleId": "mouvement-interactions",
+    "lessonId": "decrire-un-mouvement",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "Un passager assis dans un bus en mouvement est au repos :",
+    "choices": [
+      "Dans le référentiel du bus",
+      "Dans le référentiel terrestre",
+      "Dans tous les référentiels",
+      "Seulement si le bus accélère"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dans le référentiel du bus, la position du passager reste constante."
+  },
+  {
+    "id": "mi_ex_03",
+    "moduleId": "mouvement-interactions",
+    "lessonId": "decrire-un-mouvement",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "L'ensemble des positions successives d'un point décrivant un système s'appelle :",
+    "choices": [
+      "Le déplacement",
+      "La résultante",
+      "La trajectoire",
+      "La tension"
+    ],
+    "correctIndex": 2,
+    "explanation": "Par définition, la trajectoire est l'ensemble des positions successives du point."
+  },
+  {
+    "id": "mi_ex_04",
+    "moduleId": "mouvement-interactions",
+    "lessonId": "decrire-un-mouvement",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "Si un mobile suit une ligne droite mais que la valeur de sa vitesse augmente, son mouvement est :",
+    "choices": [
+      "Rectiligne uniforme",
+      "Rectiligne non uniforme",
+      "Circulaire uniforme",
+      "Immobile"
+    ],
+    "correctIndex": 1,
+    "explanation": "La trajectoire est une droite, mais la valeur de la vitesse varie : le mouvement n'est donc pas uniforme."
+  },
+  {
+    "id": "mi_ex_05",
+    "moduleId": "mouvement-interactions",
+    "lessonId": "decrire-un-mouvement",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "Le vecteur vitesse d'un point donne directement :",
+    "choices": [
+      "La masse du système et son sens",
+      "La direction, le sens et la valeur de la vitesse",
+      "Le poids du système",
+      "Le référentiel terrestre"
+    ],
+    "correctIndex": 1,
+    "explanation": "Le vecteur vitesse caractérise la direction, le sens et la valeur de la vitesse."
+  },
+  {
+    "id": "mi_ex_06",
+    "moduleId": "mouvement-interactions",
+    "lessonId": "decrire-un-mouvement",
+    "type": "mcq",
+    "difficulty": "advanced",
+    "prompt": "Pourquoi décrit-on souvent le mouvement d'un système par celui d'un point ?",
+    "choices": [
+      "Parce que tous les systèmes sont ponctuels en réalité",
+      "Parce que cela évite d'avoir à choisir un référentiel",
+      "Parce que cela simplifie l'étude du mouvement quand la taille est négligeable",
+      "Parce que cela permet de connaître la composition du système"
+    ],
+    "correctIndex": 2,
+    "explanation": "Cette modélisation simplifie l'étude du mouvement lorsque la taille du système est négligeable, au prix d'une perte d'information."
+  },
+  {
+    "id": "mi_ex_07",
+    "moduleId": "mouvement-interactions",
+    "lessonId": "decrire-un-mouvement",
+    "type": "mcq",
+    "difficulty": "advanced",
+    "prompt": "Quel énoncé traduit le mieux la relativité du mouvement ?",
+    "choices": [
+      "Un objet en mouvement est en mouvement dans tous les référentiels",
+      "Un objet immobile n'est jamais soumis à des forces",
+      "L'état de mouvement dépend du référentiel d'observation",
+      "La vitesse ne dépend que de la masse de l'objet"
+    ],
+    "correctIndex": 2,
+    "explanation": "Un même système peut être au repos dans un référentiel et en mouvement dans un autre."
+  },
+  {
+    "id": "mi_ex_08",
+    "moduleId": "mouvement-interactions",
+    "lessonId": "forces-et-mouvements",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "Une force se représente par :",
+    "choices": [
+      "Un point",
+      "Un vecteur",
+      "Une surface",
+      "Un tableau"
+    ],
+    "correctIndex": 1,
+    "explanation": "Une force se représente par un vecteur caractérisé par sa direction, son sens et sa valeur."
+  },
+  {
+    "id": "mi_ex_09",
+    "moduleId": "mouvement-interactions",
+    "lessonId": "forces-et-mouvements",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "Le poids d'un objet près de la surface de la Terre est une action :",
+    "choices": [
+      "De contact",
+      "À distance",
+      "Toujours horizontale",
+      "Exercée par le support"
+    ],
+    "correctIndex": 1,
+    "explanation": "Le poids modélise l'action gravitationnelle exercée par la Terre : c'est une action à distance."
+  },
+  {
+    "id": "mi_ex_10",
+    "moduleId": "mouvement-interactions",
+    "lessonId": "forces-et-mouvements",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "Dans un cas simple d'objet posé au repos sur une table horizontale, la réaction du support est dirigée :",
+    "choices": [
+      "Vers le bas",
+      "Vers le haut",
+      "Vers la droite",
+      "Dans le sens du mouvement"
+    ],
+    "correctIndex": 1,
+    "explanation": "Dans ce cas simple, le support exerce sur l'objet une force verticale dirigée vers le haut."
+  },
+  {
+    "id": "mi_ex_11",
+    "moduleId": "mouvement-interactions",
+    "lessonId": "forces-et-mouvements",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "Le principe des actions réciproques indique que deux systèmes en interaction exercent l'un sur l'autre des forces :",
+    "choices": [
+      "De même direction, même valeur et sens opposés",
+      "De sens identiques et de valeurs quelconques",
+      "Toujours appliquées au même système",
+      "Qui s'annulent toujours sur le même objet"
+    ],
+    "correctIndex": 0,
+    "explanation": "Le principe des actions réciproques associe deux forces de même direction, de même valeur et de sens opposés, appliquées à deux systèmes différents."
+  },
+  {
+    "id": "mi_ex_12",
+    "moduleId": "mouvement-interactions",
+    "lessonId": "forces-et-mouvements",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "La force exercée par un fil sur un objet suspendu est représentée :",
+    "choices": [
+      "Le long du fil",
+      "Toujours horizontalement",
+      "Toujours verticalement vers le bas",
+      "Depuis le centre de la Terre"
+    ],
+    "correctIndex": 0,
+    "explanation": "La force exercée par un fil est portée par la direction du fil."
+  },
+  {
+    "id": "mi_ex_13",
+    "moduleId": "mouvement-interactions",
+    "lessonId": "forces-et-mouvements",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "Quelle proposition distingue correctement masse et poids ?",
+    "choices": [
+      "La masse est une force, le poids une quantité de matière",
+      "La masse s'exprime en newtons, le poids en kilogrammes",
+      "La masse caractérise la quantité de matière, le poids est une force",
+      "La masse et le poids sont toujours égaux"
+    ],
+    "correctIndex": 2,
+    "explanation": "La masse est une grandeur exprimée en kilogrammes, tandis que le poids est une force exprimée en newtons."
+  },
+  {
+    "id": "mi_ex_14",
+    "moduleId": "mouvement-interactions",
+    "lessonId": "forces-et-mouvements",
+    "type": "mcq",
+    "difficulty": "advanced",
+    "prompt": "Deux patineurs se repoussent. Pourquoi leurs forces d'action réciproque ne se compensent-elles pas ?",
+    "choices": [
+      "Parce qu'elles n'ont pas la même valeur",
+      "Parce qu'elles s'exercent sur deux systèmes différents",
+      "Parce qu'elles ne sont pas colinéaires",
+      "Parce qu'elles n'existent qu'en mouvement"
+    ],
+    "correctIndex": 1,
+    "explanation": "Elles ne se compensent pas dans un même bilan, car elles ne s'exercent pas sur le même système."
+  },
+  {
+    "id": "mi_ex_15",
+    "moduleId": "mouvement-interactions",
+    "lessonId": "principe-dinertie",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "Si les forces exercées sur un système se compensent, celui-ci peut :",
+    "choices": [
+      "Seulement accélérer",
+      "Rester au repos ou avoir un mouvement rectiligne uniforme",
+      "Toujours tourner",
+      "Seulement tomber verticalement"
+    ],
+    "correctIndex": 1,
+    "explanation": "C'est l'énoncé du principe d'inertie dans un référentiel adapté."
+  },
+  {
+    "id": "mi_ex_16",
+    "moduleId": "mouvement-interactions",
+    "lessonId": "principe-dinertie",
+    "type": "mcq",
+    "difficulty": "foundation",
+    "prompt": "Une variation entre deux instants voisins du vecteur vitesse indique que :",
+    "choices": [
+      "La somme des forces n'est pas nulle",
+      "Le système est forcément immobile",
+      "Aucune force ne s'exerce",
+      "Le mouvement est rectiligne uniforme"
+    ],
+    "correctIndex": 0,
+    "explanation": "Une variation du vecteur vitesse traduit une somme des forces non nulle."
+  },
+  {
+    "id": "mi_ex_17",
+    "moduleId": "mouvement-interactions",
+    "lessonId": "principe-dinertie",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "Un livre immobile sur une table horizontale illustre que :",
+    "choices": [
+      "Le poids n'existe pas",
+      "Le poids est plus grand que la réaction du support",
+      "Le poids et la réaction du support se compensent",
+      "Le livre est en chute libre"
+    ],
+    "correctIndex": 2,
+    "explanation": "L'immobilité du livre montre, dans ce cas simple, que le poids et la réaction du support se compensent."
+  },
+  {
+    "id": "mi_ex_18",
+    "moduleId": "mouvement-interactions",
+    "lessonId": "principe-dinertie",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "En chute libre verticale, si l'on néglige les frottements de l'air, la vitesse du système :",
+    "choices": [
+      "Reste constante",
+      "Diminue jusqu'à s'annuler",
+      "Varie sous l'effet du poids",
+      "Est forcément nulle"
+    ],
+    "correctIndex": 2,
+    "explanation": "En chute libre, le poids n'est pas compensé : le vecteur vitesse varie donc au cours du temps."
+  },
+  {
+    "id": "mi_ex_19",
+    "moduleId": "mouvement-interactions",
+    "lessonId": "principe-dinertie",
+    "type": "mcq",
+    "difficulty": "application",
+    "prompt": "Quel énoncé correspond à la contraposée du principe d'inertie ?",
+    "choices": [
+      "Si un système est au repos, aucune force ne s'exerce sur lui",
+      "Si le vecteur vitesse varie, les forces ne se compensent pas",
+      "Si les forces se compensent, le système accélère",
+      "Si le mouvement est rectiligne, la résultante est forcément nulle"
+    ],
+    "correctIndex": 1,
+    "explanation": "La contraposée du principe d'inertie permet d'affirmer qu'une variation du vecteur vitesse implique une résultante non nulle."
+  },
+  {
+    "id": "mi_ex_20",
+    "moduleId": "mouvement-interactions",
+    "lessonId": "principe-dinertie",
+    "type": "mcq",
+    "difficulty": "advanced",
+    "prompt": "Pourquoi l'idée « il faut une force vers l'avant pour maintenir un mouvement rectiligne uniforme » est-elle fausse ?",
+    "choices": [
+      "Parce qu'un mouvement uniforme correspond justement à des forces qui se compensent",
+      "Parce qu'aucune force ne peut être horizontale",
+      "Parce que la vitesse ne peut jamais être constante",
+      "Parce que seule la masse commande le mouvement"
+    ],
+    "correctIndex": 0,
+    "explanation": "Un mouvement rectiligne uniforme correspond à des forces qui se compensent ; il ne nécessite pas une force motrice non compensée."
+  },
+  {
+    "id": "mi_ex_21",
+    "moduleId": "mouvement-interactions",
+    "lessonId": "principe-dinertie",
+    "type": "mcq",
+    "difficulty": "advanced",
+    "prompt": "Un mobile se déplace en ligne droite à vitesse constante. Que peut-on conclure ?",
+    "choices": [
+      "Aucune force ne s'exerce sur lui",
+      "Les forces appliquées se compensent ou sont négligeables",
+      "Son poids est nul",
+      "Il est nécessairement immobile dans tous les référentiels"
+    ],
+    "correctIndex": 1,
+    "explanation": "Dans le référentiel adapté, un mouvement rectiligne uniforme correspond à une résultante des forces nulle."
+  }
+]

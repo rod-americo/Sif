@@ -1,0 +1,194 @@
+[
+  {
+    "id": "mi_card_01",
+    "prompt": "Pourquoi faut-il préciser un système et un référentiel pour décrire un mouvement ?",
+    "answer": "Parce que le mouvement décrit dépend du système étudié et du référentiel choisi.",
+    "moduleIds": ["mouvement-interactions"],
+    "lessonIds": ["decrire-un-mouvement"],
+    "tags": ["referentiel", "mouvement"]
+  },
+  {
+    "id": "mi_card_02",
+    "prompt": "Qu'est-ce qu'une trajectoire ?",
+    "answer": "L'ensemble des positions successives du point choisi pour décrire le mouvement du système.",
+    "moduleIds": ["mouvement-interactions"],
+    "lessonIds": ["decrire-un-mouvement"],
+    "tags": ["trajectoire", "definition"]
+  },
+  {
+    "id": "mi_card_03",
+    "prompt": "Cite trois formes de trajectoire étudiées en seconde.",
+    "answer": "Rectiligne, circulaire et curviligne.",
+    "moduleIds": ["mouvement-interactions"],
+    "lessonIds": ["decrire-un-mouvement"],
+    "tags": ["trajectoire", "classification"]
+  },
+  {
+    "id": "mi_card_04",
+    "prompt": "Que représente le vecteur déplacement ?",
+    "answer": "Le vecteur qui relie deux positions successives d'un point.",
+    "moduleIds": ["mouvement-interactions"],
+    "lessonIds": ["decrire-un-mouvement"],
+    "tags": ["vecteur", "deplacement"]
+  },
+  {
+    "id": "mi_card_05",
+    "prompt": "Que donne le vecteur vitesse d'un point ?",
+    "answer": "La direction, le sens et la valeur de la vitesse du point.",
+    "moduleIds": ["mouvement-interactions"],
+    "lessonIds": ["decrire-un-mouvement"],
+    "tags": ["vecteur", "vitesse"]
+  },
+  {
+    "id": "mi_card_06",
+    "prompt": "Quand parle-t-on de mouvement rectiligne uniforme ?",
+    "answer": "Quand la trajectoire est une droite et que la valeur de la vitesse reste constante.",
+    "moduleIds": ["mouvement-interactions"],
+    "lessonIds": ["decrire-un-mouvement"],
+    "tags": ["mru", "mouvement"]
+  },
+  {
+    "id": "mi_card_07",
+    "prompt": "Quel est l'intérêt de décrire le mouvement d'un système par celui d'un point ?",
+    "answer": "Cette modélisation simplifie l'étude du mouvement lorsque la taille du système est négligeable devant le trajet étudié.",
+    "moduleIds": ["mouvement-interactions"],
+    "lessonIds": ["decrire-un-mouvement"],
+    "tags": ["modelisation", "point-materiel"]
+  },
+  {
+    "id": "mi_card_08",
+    "prompt": "Quelle information perd-on souvent en modélisant un système par un point ?",
+    "answer": "Des informations sur sa forme, sa taille ou sa rotation.",
+    "moduleIds": ["mouvement-interactions"],
+    "lessonIds": ["decrire-un-mouvement"],
+    "tags": ["modelisation", "limites"]
+  },
+  {
+    "id": "mi_card_09",
+    "prompt": "Comment modélise-t-on une action sur un système ?",
+    "answer": "Par une force représentée par un vecteur.",
+    "moduleIds": ["mouvement-interactions"],
+    "lessonIds": ["forces-et-mouvements"],
+    "tags": ["force", "definition"]
+  },
+  {
+    "id": "mi_card_10",
+    "prompt": "Quelles sont les trois caractéristiques essentielles d'une force au lycée ?",
+    "answer": "Sa direction, son sens et sa valeur.",
+    "moduleIds": ["mouvement-interactions"],
+    "lessonIds": ["forces-et-mouvements"],
+    "tags": ["force", "vecteur"]
+  },
+  {
+    "id": "mi_card_11",
+    "prompt": "Quelle différence entre action de contact et action à distance ?",
+    "answer": "Une action de contact suppose un contact entre deux systèmes ; une action à distance s'exerce sans contact direct.",
+    "moduleIds": ["mouvement-interactions"],
+    "lessonIds": ["forces-et-mouvements"],
+    "tags": ["contact", "distance"]
+  },
+  {
+    "id": "mi_card_12",
+    "prompt": "Qu'est-ce que le poids d'un objet ?",
+    "answer": "L'action gravitationnelle exercée par un astre sur cet objet près de sa surface.",
+    "moduleIds": ["mouvement-interactions"],
+    "lessonIds": ["forces-et-mouvements"],
+    "tags": ["poids", "gravitation"]
+  },
+  {
+    "id": "mi_card_14",
+    "prompt": "Vers où est dirigé le poids d'un objet près de la Terre ?",
+    "answer": "Vers le centre de la Terre.",
+    "moduleIds": ["mouvement-interactions"],
+    "lessonIds": ["forces-et-mouvements"],
+    "tags": ["poids", "direction"]
+  },
+  {
+    "id": "mi_card_15",
+    "prompt": "Que modélise la réaction du support ?",
+    "answer": "L'action exercée par un support sur un objet en contact avec lui.",
+    "moduleIds": ["mouvement-interactions"],
+    "lessonIds": ["forces-et-mouvements"],
+    "tags": ["support", "contact"]
+  },
+  {
+    "id": "mi_card_16",
+    "prompt": "Comment est orientée la force exercée par un fil tendu ?",
+    "answer": "Selon la direction du fil.",
+    "moduleIds": ["mouvement-interactions"],
+    "lessonIds": ["forces-et-mouvements"],
+    "tags": ["fil", "tension"]
+  },
+  {
+    "id": "mi_card_17",
+    "prompt": "Que dit le principe des actions réciproques entre deux systèmes ?",
+    "answer": "Si un système A agit sur un système B, alors B agit sur A avec une force de même direction, de même valeur et de sens opposé.",
+    "moduleIds": ["mouvement-interactions"],
+    "lessonIds": ["forces-et-mouvements"],
+    "tags": ["newton", "actions-reciproques"]
+  },
+  {
+    "id": "mi_card_13",
+    "prompt": "Pourquoi deux forces d'action réciproque ne se compensent-elles pas ?",
+    "answer": "Parce qu'elles s'exercent sur deux systèmes différents.",
+    "moduleIds": ["mouvement-interactions"],
+    "lessonIds": ["forces-et-mouvements"],
+    "tags": ["newton", "bilan-des-forces"]
+  },
+  {
+    "id": "mi_card_18",
+    "prompt": "Que prévoit le principe d'inertie si les forces se compensent ?",
+    "answer": "Le système reste au repos ou en mouvement rectiligne uniforme.",
+    "moduleIds": ["mouvement-interactions"],
+    "lessonIds": ["principe-dinertie"],
+    "tags": ["inertie", "mru"]
+  },
+  {
+    "id": "mi_card_19",
+    "prompt": "Que permet la contraposée du principe d'inertie ?",
+    "answer": "Elle permet de conclure que, si le vecteur vitesse varie entre deux instants voisins, la somme des forces n'est pas nulle.",
+    "moduleIds": ["mouvement-interactions"],
+    "lessonIds": ["principe-dinertie"],
+    "tags": ["inertie", "contraposee"]
+  },
+  {
+    "id": "mi_card_20",
+    "prompt": "Une vitesse constante nécessite-t-elle une force vers l'avant non compensée ?",
+    "answer": "Non. Une vitesse constante correspond à des forces qui se compensent dans le référentiel considéré.",
+    "moduleIds": ["mouvement-interactions"],
+    "lessonIds": ["principe-dinertie"],
+    "tags": ["inertie", "idee-fausse"]
+  },
+  {
+    "id": "mi_card_21",
+    "prompt": "Quel bilan de forces explique un livre immobile sur une table ?",
+    "answer": "Le poids vers le bas et la réaction du support vers le haut se compensent.",
+    "moduleIds": ["mouvement-interactions"],
+    "lessonIds": ["principe-dinertie"],
+    "tags": ["equilibre", "support"]
+  },
+  {
+    "id": "mi_card_22",
+    "prompt": "Pourquoi la chute libre n'est-elle pas un mouvement rectiligne uniforme ?",
+    "answer": "Parce que le vecteur vitesse varie sous l'effet du poids non compensé.",
+    "moduleIds": ["mouvement-interactions"],
+    "lessonIds": ["principe-dinertie"],
+    "tags": ["chute-libre", "vitesse"]
+  },
+  {
+    "id": "mi_card_23",
+    "prompt": "Que signifie « forces qui se compensent » ?",
+    "answer": "Que leur somme vectorielle est nulle.",
+    "moduleIds": ["mouvement-interactions"],
+    "lessonIds": ["principe-dinertie"],
+    "tags": ["resultante", "forces"]
+  },
+  {
+    "id": "mi_card_24",
+    "prompt": "Dans ce module, que révèle une variation de direction du vecteur vitesse ?",
+    "answer": "Elle révèle qu'une action extérieure non compensée s'exerce sur le système.",
+    "moduleIds": ["mouvement-interactions"],
+    "lessonIds": ["principe-dinertie"],
+    "tags": ["vecteur-vitesse", "resultante"]
+  }
+]

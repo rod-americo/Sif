@@ -1,0 +1,31 @@
+{
+  "id": "mouvement-interactions",
+  "title": "Mouvement et interactions",
+  "theme": "Thème 2",
+  "order": 2,
+  "status": "active",
+  "summary": "Décrire le mouvement d'un système dans un référentiel, modéliser une action sur un système par une force et exploiter le principe d'inertie.",
+  "whyItMatters": "Ce module construit les repères de mécanique utiles pour lire un mouvement, modéliser une interaction et préparer l'étude dynamique des systèmes.",
+  "objectives": [
+    "Choisir un référentiel et décrire le mouvement d'un système par celui d'un point.",
+    "Modéliser une action sur un système par une force et distinguer actions de contact et actions à distance.",
+    "Exploiter le principe d'inertie ou sa contraposée pour relier variation du vecteur vitesse et forces."
+  ],
+  "chapters": [
+    {
+      "id": "decrire-un-mouvement",
+      "title": "Décrire un mouvement",
+      "lessonFile": "01-decrire-un-mouvement.md"
+    },
+    {
+      "id": "forces-et-mouvements",
+      "title": "Modéliser une action sur un système",
+      "lessonFile": "02-forces-et-mouvements.md"
+    },
+    {
+      "id": "principe-dinertie",
+      "title": "Principe d'inertie",
+      "lessonFile": "03-principe-dinertie.md"
+    }
+  ]
+}

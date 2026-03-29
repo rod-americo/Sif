@@ -59,6 +59,18 @@ Maintain and expand a personal study application for French `2nde` physics-chemi
 - Do not overwrite learner progress just because content changed.
 - When changing schemas, document the migration path in `README.md`.
 
+## Commit Standard
+
+- Write commit messages in English.
+- Use imperative mood in the subject line.
+- Keep the subject line at or below 72 characters.
+- Prefer the format `type(scope): summary`.
+- Use conventional prefixes when relevant: `feat`, `fix`, `refactor`, `perf`, `test`, `docs`, `chore`.
+- Keep each commit focused on one logical change.
+- Avoid vague summaries such as `update` or `changes`.
+- Mention the concrete technical effect of the change.
+- Add a short body only when it clarifies rationale, compatibility, or risk.
+
 ## Files Worth Reading First
 
 - `README.md`
