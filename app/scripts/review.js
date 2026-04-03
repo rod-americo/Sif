@@ -154,7 +154,8 @@ async function bootReview() {
                 return;
             }
 
-            const rating = target.getAttribute('data-rating');
+            const reviewButton = target.closest('.review-btn');
+            const rating = reviewButton?.getAttribute('data-rating');
             if (!rating) {
                 return;
             }
