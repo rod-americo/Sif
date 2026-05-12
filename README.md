@@ -48,8 +48,7 @@ The curriculum scaffold also includes:
 
 ## Run
 
-```bash
-python3 server/server.py
+```bash python3 server/server.py
 ```
 
 Default URL:

@@ -1,6 +1,5 @@
 ---
-name: sif-learning-app
-description: Use when working on the Sif repository, especially for modular curriculum content, exercise metrics, the global review deck, and SQLite-backed study persistence.
+name: sif-learning-app description: Use when working on the Sif repository, especially for modular curriculum content, exercise metrics, the global review deck, and SQLite-backed study persistence.
 ---
 
 # Sif Learning App
